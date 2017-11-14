@@ -21,7 +21,7 @@ import com.socsi.smartposapi.printer.TextEntity;
 public class PrintActivity extends CordovaPlugin {
 
 private CallbackContext callbackContext;
-private String vuelta = "PIVPluginVerificado";
+private String vuelta = "PIVPluginPrintVerificado";
 private String rta;
 
     @Override
