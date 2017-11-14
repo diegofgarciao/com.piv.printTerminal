@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="com.piv.printTerminal"
+        id="com.piv.print"
         version="0.0.1">
 
     <name>print</name>
@@ -34,7 +34,7 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/PrintActivity.java" target-dir="src/com/piv/print" />
+        <source-file src="src/android/PrintActivity.java" target-dir="src/com/piv/print"/>
         <!--<source-file src="src/android/libs/proguard-smartpos_api_20170620b01.jar" target-dir="libs" framework="true"/>
         <source-file src="src/android/libs/armeabi/libemvL2.so" target-dir="libs/armeabi" framework="true"/>
         <source-file src="src/android/libs/armeabi/libFreeTypelib.so" target-dir="libs/armeabi" framework="true"/>
