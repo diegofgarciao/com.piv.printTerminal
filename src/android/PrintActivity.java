@@ -31,6 +31,6 @@ private String rta;
                 rta = args + vuelta;
                 callbackContext.success(rta);
             }
-
+            return true;
         }
 }
