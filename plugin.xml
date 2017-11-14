@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.piv.printTerminal"
+        version="0.0.1">
+
+    <name>print</name>
+
+    <engines>
+        <engine name="cordova" version=">=3.4.0"/>
+    </engines>
+
+    <js-module src="www/print.js" name="PrintActivity">
+        <clobbers target="printTerminal"/>
+    </js-module>
+
+    <platform name="android">
+
+        <config-file target="AndroidManifest.xml" parent="application">
+            <service android:name="com.socsi.smartposapi.printer.PrintRespCode" />
+            <service android:name="com.socsi.smartposapi.printer.Printer2" />
+            <service android:name="com.socsi.smartposapi.printer.TextEntity" />
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <service android:name="com.socsi.smartposapi.printer.PrintRespCode" />
+            <service android:name="com.socsi.smartposapi.printer.Printer2" />
+            <service android:name="com.socsi.smartposapi.printer.TextEntity" />
+        </config-file>
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="print">
+                <param name="android-package" value="com.piv.print.PrintActivity"/>
+                <lib-file src="src/android/libs/proguard-smartpos_api_20170620b01.jar"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/PrintActivity.java" target-dir="src/com/piv/print" />
+        <source-file src="src/android/libs/proguard-smartpos_api_20170620b01.jar" target-dir="libs" framework="true"/>
+        <source-file src="src/android/libs/armeabi/libemvL2.so" target-dir="libs/armeabi" framework="true"/>
+        <source-file src="src/android/libs/armeabi/libFreeTypelib.so" target-dir="libs/armeabi" framework="true"/>
+        <source-file src="src/android/libs/armeabi/libk21power.so" target-dir="libs/armeabi" framework="true"/>
+        <source-file src="src/android/libs/armeabi/libserial_port.so" target-dir="libs/armeabi" framework="true"/>
+
+    </platform>
+
+</plugin>
