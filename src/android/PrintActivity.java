@@ -33,7 +33,7 @@ private String rta;
             }
             else if (action.equals("printinTerminal")) {
                 Printer2 print = Printer2.getInstance();
-                print.appendTextEntity2("Prueba Impresion PIV Ingenieria.....", null, false, null);
+                print.appendTextEntity2(new TextEntity("Prueba Impresion PIV Ingenieria.....", null, false, null));
                 PrintRespCode printRespCode = print.startPrint();
                 Log.i("PrintActivity", printRespCode.toString().toString());
              }
