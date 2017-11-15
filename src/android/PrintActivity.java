@@ -59,7 +59,7 @@ private String rta;
                      text.text="Centrado";
                      text.align= Align.CENTER;
                      text.engfontsize=FontLattice.TWENTY_FOUR;
-                     print.appendTextEntity2(text);
+                     //print.appendTextEntity2(text);
 
                      text.text="TextTextTextTextTextTextTextTextTextTextTextTextLinea2 TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText";
                      text.align= Align.RIGHT;
