@@ -52,6 +52,11 @@ private String rta;
                      text.engfontsize=FontLattice.TWENTY_FOUR;
                      print.appendTextEntity2(text);
 
+                     text.text="Centrado";
+                                          text.align= Align.CENTER;
+                                          text.engfontsize=FontLattice.TWENTY_FOUR;
+                                          print.appendTextEntity2(text);
+
                  /*for (FontLattice c : FontLattice.values())
                    {
 
