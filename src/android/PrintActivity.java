@@ -62,9 +62,9 @@ private String rta;
                      text.engfontsize=FontLattice.TWENTY_FOUR;
                      print.appendTextEntity2(text);
 
-                     textOne.textOne="TextTextTextTextTextTextTextTextTextTextTextTextLinea2 TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText";
-                     textOne.align= Align.RIGHT;
-                     textOne.engfontsize=FontLattice.TWENTY_FOUR;
+                     text.textOne="TextTextTextTextTextTextTextTextTextTextTextTextLinea2 TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText";
+                     text.align= Align.RIGHT;
+                     text.engfontsize=FontLattice.TWENTY_FOUR;
                      print.appendTextEntity2(textOne);
 
                 PrintRespCode printRespCode = print.startPrint();
