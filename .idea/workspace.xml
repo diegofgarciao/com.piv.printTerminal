@@ -46,7 +46,7 @@
             <entry file="file://$PROJECT_DIR$/src/android/PrintActivity.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="395">
-                  <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+                  <caret line="38" column="64" lean-forward="true" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
                   <folding />
                 </state>
               </provider>
@@ -169,12 +169,12 @@
       <updated>1510667657348</updated>
       <workItem from="1510667658833" duration="8270000" />
       <workItem from="1510686451198" duration="1438000" />
-      <workItem from="1510774955531" duration="1038000" />
+      <workItem from="1510774955531" duration="1388000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10746000" />
+    <option name="totallyTimeSpent" value="11096000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
@@ -282,7 +282,7 @@
     <entry file="file://$PROJECT_DIR$/src/android/PrintActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
-          <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+          <caret line="38" column="64" lean-forward="true" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
           <folding />
         </state>
       </provider>
