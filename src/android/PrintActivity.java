@@ -39,6 +39,7 @@ private String rta;
                 //print.appendTextEntity2(new TextEntity("{center}{s}TIQUETE DE ESTACIONAMIENTO{/s}{br} {center}{s}REGULADO{/s}{br} {center}{s}SABANETA ANTIOQUIA{/s}{br} {center}{s}{b} NIT: 890.980.331-6{/b}{/s}{br}{br} {center}{h}{b}ALERTA DE COBRO{/b}{/h}{br}{br}{left}{s}{s} Fecha:2017/11/14{/s}{/s}{/left}{br}{left}{s} Hora:14:18{/s}{/left}{br}{left}{h}{b} Placa: ABC123{/b}{/h}{/left}{br}{left}{s} Zona:A03{/s}{/left}{br}{left}{s} Consecutivo:1548684{/s}{/left}{br}{left} Tarifa: 15 min - Valor: $600{/left}{br}{br}{center}{s} Senor usuario: pague el valor unicamente al informador{/s}{br}{center}{s}   Ubique este tiquete en su vehiculo con esta cara hacia arriba en un lugar visible{/s}{br}{br}{left}{b}Recomendaciones y condiciones.{/b}{/left}{br}{left}{s}{s}Conserve y asegure su tiquete, tenga presente el valor de la tarifa y los horarios. Deje su vehiculo correctamente estacionado dentro de la celda. No nos hacemos responsables por robos danos causados por terceros, terremotos, incendio, alborotos populares o asonada. Deje su vehiculo debidamente cerrado y asegurado. Las motos deben estacionar unica y exclusivamente en las celdas destinadas para ellas. Los espacios de estacionamiento no pueden usarse como deposito ni permanentes ni temporales y solo estan destinados para el estacionamiento de vehiculos. El estacionamiento en lugares no permitidos puede ocasionar penalizacion por parte del organismo de transito. Estacionarse sin cancelar el valor por el estacionamiento puede ocasionar penalizacion por parte del organismo de transito.{/s}{/s}{left}{br}{br}{center}{s}Visite nuestra pagina web{/s}{br}{center}{s}{b}www.sesvip.co{/b}{/s}{br} ", null, false, null));
 
                 TextEntity text =  new TextEntity("Texto prueba", null, false, null);
+                TextEntity textOne =  new TextEntity(" ", null, false, null);
                 print.appendTextEntity2(text);
 
                 text.text="Texto prueba 2";
@@ -59,17 +60,16 @@ private String rta;
                      text.text="Centrado";
                      text.align= Align.CENTER;
                      text.engfontsize=FontLattice.TWENTY_FOUR;
-                     //print.appendTextEntity2(text);
-
-                     text.text="TextTextTextTextTextTextTextTextTextTextTextTextLinea2 TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText";
-                     text.align= Align.RIGHT;
-                     text.engfontsize=FontLattice.TWENTY_FOUR;
                      print.appendTextEntity2(text);
+
+                     textOne.textOne="TextTextTextTextTextTextTextTextTextTextTextTextLinea2 TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText";
+                     textOne.align= Align.RIGHT;
+                     textOne.engfontsize=FontLattice.TWENTY_FOUR;
+                     print.appendTextEntity2(textOne);
 
                 PrintRespCode printRespCode = print.startPrint();
                 callbackContext.success(printRespCode.toString());
-
-                Log.i("PrintActivity", printRespCode.toString().toString());
+                //Log.i("PrintActivity", printRespCode.toString().toString());
              }
             return true;
         }
