@@ -46,7 +46,7 @@ private String rta;
                 text.isBoldFont=true;
                 print.appendTextEntity2(text);
 
-                 /*for (FontLattice c : FontLattice.values())
+                 for (FontLattice c : FontLattice.values())
                    {
 
                      text.isBoldFont=true;
@@ -55,7 +55,7 @@ private String rta;
                      print.appendTextEntity2(text);
                      System.out.println(c);
 
-                   }*/
+                   }
 
                      text.text="Centrado";
                      text.align= Align.CENTER;
