@@ -61,11 +61,10 @@ private String rta;
                      text.engfontsize=FontLattice.TWENTY_FOUR;
                      print.appendTextEntity2(text);
 
-                     /*text.align= Align.RIGHT;
-                     text.engfontsize=FontLattice.TWENTY_FOUR;
                      text.text="TextTextTextTextTextTextTextTextTextTextTextTextLinea2 TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText";
-
-                     print.appendTextEntity2(text);*/
+                     text.align= Align.RIGHT;
+                     text.engfontsize=FontLattice.TWENTY_FOUR;
+                     print.appendTextEntity2(text);
 
                 PrintRespCode printRespCode = print.startPrint();
                 callbackContext.success(printRespCode.toString());
