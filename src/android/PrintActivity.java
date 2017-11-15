@@ -57,6 +57,21 @@ private String rta;
                      text.engfontsize=FontLattice.TWENTY_FOUR;
                      print.appendTextEntity2(text);
 
+                     text.text="Centrado1";
+                                          text.align= Align.LEFT;
+                                          text.engfontsize=FontLattice.TWENTY_FOUR;
+                                          print.appendTextEntity2(text);
+
+                                          text.text="Centrado2";
+                                                               text.align= Align.CENTER;
+                                                               text.engfontsize=FontLattice.TWENTY_FOUR;
+                                                               print.appendTextEntity2(text);
+
+                                                               text.text="Centrado3";
+                                                                                    text.align= Align.RIGHT;
+                                                                                    text.engfontsize=FontLattice.TWENTY_FOUR;
+                                                                                    print.appendTextEntity2(text);
+
                  /*for (FontLattice c : FontLattice.values())
                    {
 
