@@ -54,7 +54,7 @@ private String rta;
                      print.appendTextEntity2(text);
                      System.out.println(c);
 
-                   }*/
+                   }
 
                      text.align= Align.CENTER;
                      text.engfontsize=FontLattice.TWENTY_FOUR;
@@ -65,7 +65,7 @@ private String rta;
                      text.engfontsize=FontLattice.TWENTY_FOUR;
                      text.text="TextTextTextTextTextTextTextTextTextTextTextText\nLinea2 TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText";
 
-                     print.appendTextEntity2(text);
+                     print.appendTextEntity2(text);*/
 
 
                 PrintRespCode printRespCode = print.startPrint();
