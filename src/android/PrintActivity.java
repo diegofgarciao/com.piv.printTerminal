@@ -45,7 +45,7 @@ private String rta;
                 text.isBoldFont=true;
                 print.appendTextEntity2(text);
 
-                 /*for (FontLattice c : FontLattice.values())
+                 for (FontLattice c : FontLattice.values())
                    {
 
                      text.isBoldFont=true;
@@ -63,13 +63,13 @@ private String rta;
 
                      text.align= Align.RIGHT;
                      text.engfontsize=FontLattice.TWENTY_FOUR;
-                     text.text="TextTextTextTextTextTextTextTextTextTextTextText\nLinea2 TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText";
+                     text.text="TextTextTextTextTextTextTextTextTextTextTextTextLinea2 TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText";
 
-                     print.appendTextEntity2(text);*/
-
+                     print.appendTextEntity2(text);
 
                 PrintRespCode printRespCode = print.startPrint();
                 callbackContext.success(printRespCode.toString());
+
                 Log.i("PrintActivity", printRespCode.toString().toString());
              }
             return true;
