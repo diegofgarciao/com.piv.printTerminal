@@ -13,6 +13,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.socsi.smartposapi.printer.Align;
+import com.socsi.smartposapi.printer.FontLattice;
 import com.socsi.smartposapi.printer.PrintRespCode;
 import com.socsi.smartposapi.printer.Printer2;
 import com.socsi.smartposapi.printer.TextEntity;
@@ -40,6 +43,28 @@ private String rta;
                 text.text="Texto prueba 2";
                 text.isBoldFont=true;
                 print.appendTextEntity2(text);
+
+                 for (FontLattice c : FontLattice.values())
+                   {
+
+                     text.isBoldFont=true;
+                     text.engfontsize=c;
+                     text.text="Tamaños: "+c;
+                     print.appendTextEntity2(text);
+                     System.out.println(c);
+
+                   }
+
+                     text.align= Align.CENTER;
+                     text.engfontsize=FontLattice.TWENTY_FOUR;
+                     text.text="Centrado";
+                     print.appendTextEntity2(text);
+
+                     text.align= Align.RIGHT;
+                     text.engfontsize=FontLattice.TWENTY_FOUR;
+                     text.text="TextTextTextTextTextTextTextTextTextTextTextText\nLinea2 TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText";
+
+                     print.appendTextEntity2(text);
 
 
                 PrintRespCode printRespCode = print.startPrint();
