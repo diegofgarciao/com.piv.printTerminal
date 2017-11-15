@@ -67,10 +67,10 @@ private String rta;
                      text.engfontsize=FontLattice.TWENTY_FOUR;
                      print.appendTextEntity2(text);
 
-                     textOne.text="TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText";
-                     textOne.align= Align.RIGHT;
-                     textOne.engfontsize=FontLattice.TWENTY_FOUR;
-                     print.appendTextEntity2(textOne);
+                     text.text="TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText";
+                     text.align= Align.RIGHT;
+                     text.engfontsize=FontLattice.TWENTY_FOUR;
+                     print.appendTextEntity2(text);
 
                      /*textOne.text="TextTextTextTextTextTextTextTextTextTextTextTextLinea2 TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText";
                      textOne.align= Align.RIGHT;
