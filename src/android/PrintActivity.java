@@ -62,15 +62,7 @@ private String rta;
                      text.engfontsize=FontLattice.TWENTY_FOUR;
                      print.appendTextEntity2(text);
 
-                     text.text="ImpresionPrueba";
-                     text.align= Align.CENTER;
-                     text.engfontsize=FontLattice.TWENTY_FOUR;
-                     print.appendTextEntity2(text);
 
-                     text.text="TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText";
-                     text.align= Align.RIGHT;
-                     text.engfontsize=FontLattice.TWENTY_FOUR;
-                     print.appendTextEntity2(text);
 
                      /*textOne.text="TextTextTextTextTextTextTextTextTextTextTextTextLinea2 TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText";
                      textOne.align= Align.RIGHT;
@@ -78,7 +70,7 @@ private String rta;
                      print.appendTextEntity2(textOne);*/
 
                 PrintRespCode printRespCode = print.startPrint();
-                //callbackContext.success(printRespCode.toString());
+                callbackContext.success(printRespCode.toString());
                 //Log.i("PrintActivity", printRespCode.toString().toString());
              }
             return true;
