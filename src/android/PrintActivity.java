@@ -78,7 +78,7 @@ private String rta;
                      print.appendTextEntity2(textOne);*/
 
                 PrintRespCode printRespCode = print.startPrint();
-                callbackContext.success(printRespCode.toString());
+                //callbackContext.success(printRespCode.toString());
                 //Log.i("PrintActivity", printRespCode.toString().toString());
              }
             return true;
