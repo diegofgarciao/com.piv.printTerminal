@@ -26,7 +26,7 @@ public class PrintActivity extends CordovaPlugin {
 private CallbackContext callbackContext;
 private String vuelta = "PIVPluginPrintVerificado";
 private String rta;
-
+private String msgIn;
 
     @Override
         public boolean execute(String action, final JSONArray args, CallbackContext callbackContext){
@@ -38,8 +38,8 @@ private String rta;
 
             else if (action.equals("printinTerminal")) {
 
-                String msgIn = new String();
-                String msgIn = args;
+
+                msgIn = args + vuelta;
 
                 Printer2 print = Printer2.getInstance();
 
