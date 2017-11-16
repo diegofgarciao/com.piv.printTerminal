@@ -49,7 +49,7 @@ private String msgIn;
                 print.appendTextEntity2(text);
 
                 text.text="TIQUETE DE ESTACIONAMIENTO";
-                text.isBoldFont=false;
+                text.isBoldFont=false ;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.SIXTEEN;
                 print.appendTextEntity2(text);
@@ -57,23 +57,32 @@ private String msgIn;
                 text.text="ZONA DE ESTACIONAMIENTO REGULADO";
                 text.isBoldFont=false;
                 text.align= Align.CENTER;
-                text.engfontsize=FontLattice.SIXTEEN;
+                text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
 
-                     text.text="Centrado1";
-                     text.align= Align.RIGHT;
-                     text.engfontsize=FontLattice.TWENTY_FOUR;
-                     print.appendTextEntity2(text);
+                text.text="SABANETA ANTIOQUIA";
+                text.isBoldFont=false;
+                text.align= Align.CENTER;
+                text.engfontsize=FontLattice.TWENTY_FOUR;
+                print.appendTextEntity2(text);
 
-                     text.text="Centrado2";
-                     text.align= Align.LEFT;
-                     text.engfontsize=FontLattice.FORTY_EIGHT;
-                     print.appendTextEntity2(text);
+                text.text="NIT : 890.980.331-6";
+                text.isBoldFont=true;
+                text.align= Align.LEFT;
+                text.engfontsize=FontLattice.TWENTY_FOUR;
+                print.appendTextEntity2(text);
 
-                     text.text="Centrado3";
-                     text.align= Align.CENTER;
-                     text.engfontsize=FontLattice.TWENTY_FOUR;
-                     print.appendTextEntity2(text);
+                text.text="DIR: Calle XX Sur #YY-XX";
+                text.isBoldFont=true;
+                text.align= Align.CENTER;
+                text.engfontsize=FontLattice.TWENTY_FOUR;
+                print.appendTextEntity2(text);
+
+                text.text="TEL: 3X4X5X6X";
+                text.isBoldFont=true;
+                text.align= Align.CENTER;
+                text.engfontsize=FontLattice.TWENTY_FOUR;
+                print.appendTextEntity2(text);
 
                      text.text="Centrado4";
                      text.align= Align.RIGHT;
