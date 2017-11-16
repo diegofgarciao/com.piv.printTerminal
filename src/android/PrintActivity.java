@@ -38,6 +38,7 @@ private String rta;
 
             else if (action.equals("printinTerminal")) {
 
+                String msgIn = new String();
                 String msgIn = args;
 
                 Printer2 print = Printer2.getInstance();
