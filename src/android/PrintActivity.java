@@ -52,29 +52,29 @@ private String vacio;
                 print.appendTextEntity2(text);
 
                 text.text="TIQUETE DE ESTACIONAMIENTO";
-                text.isBoldFont=false ;
-                text.fontType= FontType.SIMSUM;
+                text.isBoldFont=false;
+                text.engFontType= FontType.SIMSUM;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
 
                 text.text="ZONA DE ESTACIONAMIENTO";
                 text.isBoldFont=false;
-                text.fontType= FontType.SIMKAI;
+                text.engFontType= FontType.SIMKAI;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
 
                 text.text="REGULADO SABANETA ANTIOQUIA";
                 text.isBoldFont=false;
-                text.fontType= FontType.FZZDX;
+                text.engFontType= FontType.FZZDX;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
 
                 text.text="NIT : 890.980.331-6";
                 text.isBoldFont=true;
-                text.fontType= FontType.MSGOTHIC;
+                text.engFontType= FontType.MSGOTHIC;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
