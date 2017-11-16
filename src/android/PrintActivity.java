@@ -46,7 +46,7 @@ private String vacio;
 
                 Printer2 print = Printer2.getInstance();
 
-                TextEntity text =  new TextEntity(msgIn, null, false, null);
+                TextEntity text =  new TextEntity(vacio, null, false, null);
                 //TextEntity textOne =  new TextEntity(" ", null, false, null);
                 print.appendTextEntity2(text);
 
@@ -59,7 +59,7 @@ private String vacio;
                 text.text="ZONA DE ESTACIONAMIENTO REGULADO";
                 text.isBoldFont=false;
                 text.align= Align.CENTER;
-                text.engfontsize=FontLattice.SIXTEEN;
+                text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
 
                 text.text="SABANETA ANTIOQUIA";
@@ -102,26 +102,29 @@ private String vacio;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
 
+                text.text="Fecha:2017/11/16";
+                text.align= Align.LEFT;
+                text.engfontsize=FontLattice.TWENTY_FOUR;
+                print.appendTextEntity2(text);
 
-                     text.text="Centrado6";
-                     text.align= Align.RIGHT;
-                     text.engfontsize=FontLattice.SIXTEEN;
-                     print.appendTextEntity2(text);
+                text.text="Hora:17:30";
+                text.align= Align.LEFT;
+                text.engfontsize=FontLattice.TWENTY_FOUR;
+                print.appendTextEntity2(text);
 
-                     text.text="Centrado7";
-                     text.align= Align.LEFT;
-                     text.engfontsize=FontLattice.TWENTY_FOUR;
-                     print.appendTextEntity2(text);
+                text.text="PLACA:ABC123";
+                text.isBoldFont=true;
+                text.align= Align.LEFT;
+                text.engfontsize=FontLattice.THIRTY_TWO;
+                print.appendTextEntity2(text);
 
-                     text.text="Centrado8";
-                     text.align= Align.CENTER;
-                     text.engfontsize=FontLattice.EIGHT;
-                     print.appendTextEntity2(text);
+                text.text="Zona:X01";
+                text.align= Align.LEFT;
+                text.engfontsize=FontLattice.TWENTY_FOUR;
+                print.appendTextEntity2(text);
 
-                     text.text="Centrado9";
-                     text.align= Align.RIGHT;
-                     text.engfontsize=FontLattice.FORTY_EIGHT;
-                     print.appendTextEntity2(text);
+
+
 
                 PrintRespCode printRespCode = print.startPrint();
                 callbackContext.success(printRespCode.toString());
