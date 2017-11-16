@@ -56,13 +56,13 @@ private String vacio;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
 
-                text.text="ZONA DE ESTACIONAMIENTO REGULADO";
+                text.text="ZONA DE ESTACIONAMIENTO";
                 text.isBoldFont=false;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
 
-                text.text="SABANETA ANTIOQUIA";
+                text.text="REGULADO SABANETA ANTIOQUIA";
                 text.isBoldFont=false;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
@@ -122,6 +122,59 @@ private String vacio;
                 text.align= Align.LEFT;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
+
+                text.text="Consecutivo:000000";
+                text.align= Align.LEFT;
+                text.engfontsize=FontLattice.TWENTY_FOUR;
+                print.appendTextEntity2(text);
+
+                text.text="Valor:$0000";
+                text.align= Align.LEFT;
+                text.engfontsize=FontLattice.TWENTY_FOUR;
+                print.appendTextEntity2(text);
+
+                text.text="";
+                text.align= Align.CENTER;
+                text.engfontsize=FontLattice.TWENTY_FOUR;
+                print.appendTextEntity2(text);
+
+                text.text="Señor Usuario: Pague el valor unicamente al informador";
+                text.align= Align.CENTER;
+                text.engfontsize=FontLattice.SIXTEEN;
+                print.appendTextEntity2(text);
+
+                text.text="Ubique este tiquete en su vehiculo con esta cara hacia arriba en un lugar visible";
+                text.align= Align.CENTER;
+                text.engfontsize=FontLattice.SIXTEEN;
+                print.appendTextEntity2(text);
+
+                text.text="";
+                text.align= Align.CENTER;
+                text.engfontsize=FontLattice.TWENTY_FOUR;
+                print.appendTextEntity2(text);
+
+                text.text="Recomendaciones y condiciones.";
+                text.align= Align.LEFT;
+                text.engfontsize=FontLattice.TWENTY_FOUR;
+                print.appendTextEntity2(text);
+
+                text.text="Conserve y asegure su tiquete, tenga presente el valor de la tarifa y los horarios. Deje su vehiculo correctamente estacionado dentro de la celda. No nos hacemos responsables por robos danos causados por terceros, terremotos, incendio, alborotos populares o asonada. Deje su vehiculo debidamente cerrado y asegurado. Las motos deben estacionar unica y exclusivamente en las celdas destinadas para ellas. Los espacios de estacionamiento no pueden usarse como deposito ni permanentes ni temporales y solo estan destinados para el estacionamiento de vehiculos. El estacionamiento en lugares no permitidos puede ocasionar penalizacion por parte del organismo de transito. Estacionarse sin cancelar el valor por el estacionamiento puede ocasionar penalizacion por parte del organismo de transito.";
+                text.align= Align.LEFT;
+                text.engfontsize=FontLattice.SIXTEEN;
+                print.appendTextEntity2(text);
+
+                text.text="Visite nuestra";
+                text.align= Align.CENTER;
+                text.engfontsize=FontLattice.SIXTEEN;
+                print.appendTextEntity2(text);
+
+                text.text="www.sespiv.co";
+                text.isBoldFont=true;
+                text.align= Align.CENTER;
+                text.engfontsize=FontLattice.TWENTY_FOUR;
+                print.appendTextEntity2(text);
+
+
 
 
 
