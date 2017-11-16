@@ -46,8 +46,8 @@
           <file leaf-file-name="PrintActivity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/android/PrintActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="212" column="16" lean-forward="false" selection-start-line="212" selection-start-column="16" selection-end-line="212" selection-end-column="16" />
+                <state relative-caret-position="914">
+                  <caret line="201" column="41" lean-forward="true" selection-start-line="201" selection-start-column="41" selection-end-line="201" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
@@ -172,12 +172,12 @@
       <workItem from="1510667658833" duration="8270000" />
       <workItem from="1510686451198" duration="1438000" />
       <workItem from="1510774955531" duration="12307000" />
-      <workItem from="1510849990852" duration="13569000" />
+      <workItem from="1510849990852" duration="13915000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35584000" />
+    <option name="totallyTimeSpent" value="35930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
@@ -309,8 +309,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/android/PrintActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="212" column="16" lean-forward="false" selection-start-line="212" selection-start-column="16" selection-end-line="212" selection-end-column="16" />
+        <state relative-caret-position="914">
+          <caret line="201" column="41" lean-forward="true" selection-start-line="201" selection-start-column="41" selection-end-line="201" selection-end-column="41" />
           <folding />
         </state>
       </provider>
