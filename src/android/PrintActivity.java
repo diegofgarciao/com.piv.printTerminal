@@ -26,7 +26,7 @@ public class PrintActivity extends CordovaPlugin {
 private CallbackContext callbackContext;
 private String vuelta = "PIVPluginPrintVerificado";
 private String rta;
-
+private String msgIn;
     @Override
         public boolean execute(String action, final JSONArray args, CallbackContext callbackContext){
 
@@ -37,14 +37,17 @@ private String rta;
 
             else if (action.equals("printinTerminal")) {
 
+                msgIn = args;
+
                 Printer2 print = Printer2.getInstance();
 
-                TextEntity text =  new TextEntity("Texto prueba", null, false, null);
+                TextEntity text =  new TextEntity(msgIn, null, false, null);
                 //TextEntity textOne =  new TextEntity(" ", null, false, null);
                 print.appendTextEntity2(text);
 
-                text.text="Texto prueba 2";
+                text.text="TIQUETE DE ESTACIONAMIENTO";
                 text.isBoldFont=true;
+                text.align= Align.CENTER;
                 print.appendTextEntity2(text);
 
                      text.text="Centrado";
