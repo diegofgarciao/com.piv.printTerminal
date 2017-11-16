@@ -40,7 +40,6 @@ private String msgIn;
 
             else if (action.equals("printinTerminal")) {
 
-
                 msgIn = args;
 
                 Printer2 print = Printer2.getInstance();
@@ -50,14 +49,16 @@ private String msgIn;
                 print.appendTextEntity2(text);
 
                 text.text="TIQUETE DE ESTACIONAMIENTO";
-                text.isBoldFont=true;
+                text.isBoldFont=false;
                 text.align= Align.CENTER;
+                text.engfontsize=FontLattice.SIXTEEN;
                 print.appendTextEntity2(text);
 
-                     text.text="Centrado";
-                     text.align= Align.CENTER;
-                     text.engfontsize=FontLattice.SIXTEEN;
-                     print.appendTextEntity2(text);
+                text.text="ZONA DE ESTACIONAMIENTO REGULADO";
+                text.isBoldFont=false;
+                text.align= Align.CENTER;
+                text.engfontsize=FontLattice.SIXTEEN;
+                print.appendTextEntity2(text);
 
                      text.text="Centrado1";
                      text.align= Align.RIGHT;
