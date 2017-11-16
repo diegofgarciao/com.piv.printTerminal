@@ -51,13 +51,13 @@ private String msgIn;
                 text.text="TIQUETE DE ESTACIONAMIENTO";
                 text.isBoldFont=false ;
                 text.align= Align.CENTER;
-                text.engfontsize=FontLattice.SIXTEEN;
+                text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
 
                 text.text="ZONA DE ESTACIONAMIENTO REGULADO";
                 text.isBoldFont=false;
                 text.align= Align.CENTER;
-                text.engfontsize=FontLattice.TWENTY_FOUR;
+                text.engfontsize=FontLattice.SIXTEEN;
                 print.appendTextEntity2(text);
 
                 text.text="SABANETA ANTIOQUIA";
@@ -68,7 +68,7 @@ private String msgIn;
 
                 text.text="NIT : 890.980.331-6";
                 text.isBoldFont=true;
-                text.align= Align.LEFT;
+                text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
 
@@ -82,6 +82,7 @@ private String msgIn;
                 text.isBoldFont=true;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
+                print.appendTextEntity2(text);
                 print.appendTextEntity2(text);
 
                      text.text="Centrado4";
