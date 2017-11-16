@@ -16,6 +16,7 @@ import android.widget.TextView;*/
 
 import com.socsi.smartposapi.printer.Align;
 import com.socsi.smartposapi.printer.FontLattice;
+import com.socsi.smartposapi.printer.FontType
 import com.socsi.smartposapi.printer.PrintRespCode;
 import com.socsi.smartposapi.printer.Printer2;
 import com.socsi.smartposapi.printer.TextEntity;
@@ -52,24 +53,28 @@ private String vacio;
 
                 text.text="TIQUETE DE ESTACIONAMIENTO";
                 text.isBoldFont=false ;
+                text.fontType= FontType.SIMSUM;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
 
                 text.text="ZONA DE ESTACIONAMIENTO";
                 text.isBoldFont=false;
+                text.fontType= FontType.SIMKAI;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
 
                 text.text="REGULADO SABANETA ANTIOQUIA";
                 text.isBoldFont=false;
+                text.fontType= FontType.FZZDX;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
 
                 text.text="NIT : 890.980.331-6";
                 text.isBoldFont=true;
+                text.fontType= FontType.MSGOTHIC ;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
@@ -163,6 +168,11 @@ private String vacio;
                 text.engfontsize=FontLattice.SIXTEEN;
                 print.appendTextEntity2(text);
 
+                text.text="";
+                text.align= Align.CENTER;
+                text.engfontsize=FontLattice.SIXTEEN;
+                print.appendTextEntity2(text);
+
                 text.text="Visite nuestra";
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.SIXTEEN;
@@ -172,6 +182,16 @@ private String vacio;
                 text.isBoldFont=true;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
+                print.appendTextEntity2(text);
+
+                text.text="";
+                text.align= Align.CENTER;
+                text.engfontsize=FontLattice.SIXTEEN;
+                print.appendTextEntity2(text);
+
+                text.text="";
+                text.align= Align.CENTER;
+                text.engfontsize=FontLattice.SIXTEEN;
                 print.appendTextEntity2(text);
 
 
