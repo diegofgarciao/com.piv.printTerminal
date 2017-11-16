@@ -28,6 +28,7 @@ private String vuelta = "PIVPluginPrintVerificado";
 private String out = "";
 private String rta;
 private String msgIn;
+private String vacio;
 
     @Override
         /*public boolean execute(String action, final JSONArray args, CallbackContext callbackContext){*/
@@ -40,6 +41,7 @@ private String msgIn;
 
             else if (action.equals("printinTerminal")) {
 
+                vacio = out;
                 msgIn = args;
 
                 Printer2 print = Printer2.getInstance();
@@ -83,7 +85,7 @@ private String msgIn;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
-                print.appendTextEntity2(out);
+                print.appendTextEntity2(vacio);
 
                      text.text="Centrado4";
                      text.align= Align.RIGHT;
