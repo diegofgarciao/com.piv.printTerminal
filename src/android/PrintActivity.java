@@ -53,19 +53,20 @@ private String vacio;
 
                 text.text="TIQUETE DE ESTACIONAMIENTO";
                 text.isBoldFont=false;
-                text.engFontType= FontType.SIMSUM;
+                text.engFontType= FontType.FZZDX;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
+                text.newline=true;
                 print.appendTextEntity2(text);
 
-                text.text="ZONA DE ESTACIONAMIENTO";
+                text.text="ZONA DE ESTACIONAMIENTO REGULADO";
                 text.isBoldFont=false;
-                text.engFontType= FontType.SIMKAI;
+                text.engFontType= FontType.FZZDX;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
 
-                text.text="REGULADO SABANETA ANTIOQUIA";
+                text.text="SABANETA ANTIOQUIA";
                 text.isBoldFont=false;
                 text.engFontType= FontType.FZZDX;
                 text.align= Align.CENTER;
@@ -81,12 +82,14 @@ private String vacio;
 
                 text.text="DIR: Calle XX Sur #YY-XX";
                 text.isBoldFont=true;
+                text.engFontType= FontType.MSGOTHIC;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
 
                 text.text="TEL: 3X4X5X6X";
                 text.isBoldFont=true;
+                text.engFontType= FontType.MSGOTHIC;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
