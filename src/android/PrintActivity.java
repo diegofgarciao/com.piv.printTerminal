@@ -41,7 +41,7 @@ private String msgIn;
             else if (action.equals("printinTerminal")) {
 
 
-                msgIn = args + out;
+                msgIn = args;
 
                 Printer2 print = Printer2.getInstance();
 
