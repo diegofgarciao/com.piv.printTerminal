@@ -85,17 +85,23 @@ private String vacio;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
-                print.appendTextEntity2(vacio);
 
-                     text.text="Centrado4";
-                     text.align= Align.RIGHT;
-                     text.engfontsize=FontLattice.THIRTY_TWO;
-                     print.appendTextEntity2(text);
+                text.text="";
+                text.align= Align.CENTER;
+                text.engfontsize=FontLattice.TWENTY_FOUR;
+                print.appendTextEntity2(text);
 
-                     text.text="Centrado5";
-                     text.align= Align.CENTER;
-                     text.engfontsize=FontLattice.FORTY_EIGHT;
-                     print.appendTextEntity2(text);
+                text.text="ALERTA DE COBRO";
+                text.isBoldFont=true;
+                text.align= Align.CENTER;
+                text.engfontsize=FontLattice.THIRTY_TWO;
+                print.appendTextEntity2(text);
+
+                text.text="";
+                text.align= Align.CENTER;
+                text.engfontsize=FontLattice.TWENTY_FOUR;
+                print.appendTextEntity2(text);
+
 
                      text.text="Centrado6";
                      text.align= Align.RIGHT;
