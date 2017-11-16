@@ -79,7 +79,7 @@ private String rta;
 
                      text.text="Centrado6";
                      text.align= Align.RIGHT;
-                     text.engfontsize=FontLattice.TWENTY;
+                     text.engfontsize=FontLattice.SIXTEEN;
                      print.appendTextEntity2(text);
 
                      text.text="Centrado7";
