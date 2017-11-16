@@ -83,7 +83,7 @@ private String msgIn;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
-                print.appendTextEntity2("");
+                print.appendTextEntity2(out);
 
                      text.text="Centrado4";
                      text.align= Align.RIGHT;
