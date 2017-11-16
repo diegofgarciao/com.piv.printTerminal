@@ -89,7 +89,7 @@ private String rta;
 
                      text.text="Centrado8";
                      text.align= Align.CENTER;
-                     text.engfontsize=FontLattice.THIRTY_TWO;
+                     text.engfontsize=FontLattice.EIGHT;
                      print.appendTextEntity2(text);
 
                      text.text="Centrado9";
