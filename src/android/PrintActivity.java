@@ -72,15 +72,30 @@ private String rta;
                      text.engfontsize=FontLattice.TWENTY_FOUR;
                      print.appendTextEntity2(text);
 
-                     for (FontLattice c : FontLattice.values())
-                     {
-                     text.isBoldFont=true;
-                     text.engfontsize=c;
-                     text.text="Tamaños:"+c;
+                     text.text="Centrado5";
+                     text.align= Align.CENTER;
+                     text.engfontsize=FontLattice.TWENTY_FOUR;
                      print.appendTextEntity2(text);
 
-                     }
+                     text.text="Centrado6";
+                     text.align= Align.RIGHT;
+                     text.engfontsize=FontLattice.TWENTY_FOUR;
+                     print.appendTextEntity2(text);
 
+                     text.text="Centrado7";
+                     text.align= Align.LEFT;
+                     text.engfontsize=FontLattice.TWENTY_FOUR;
+                     print.appendTextEntity2(text);
+
+                     text.text="Centrado8";
+                     text.align= Align.CENTER;
+                     text.engfontsize=FontLattice.TWENTY_FOUR;
+                     print.appendTextEntity2(text);
+
+                     text.text="Centrado9";
+                     text.align= Align.RIGHT;
+                     text.engfontsize=FontLattice.TWENTY_FOUR;
+                     print.appendTextEntity2(text);
 
                 PrintRespCode printRespCode = print.startPrint();
                 callbackContext.success(printRespCode.toString());
