@@ -16,7 +16,7 @@ import android.widget.TextView;*/
 
 import com.socsi.smartposapi.printer.Align;
 import com.socsi.smartposapi.printer.FontLattice;
-import com.socsi.smartposapi.printer.FontType
+import com.socsi.smartposapi.printer.FontType;
 import com.socsi.smartposapi.printer.PrintRespCode;
 import com.socsi.smartposapi.printer.Printer2;
 import com.socsi.smartposapi.printer.TextEntity;
@@ -74,7 +74,7 @@ private String vacio;
 
                 text.text="NIT : 890.980.331-6";
                 text.isBoldFont=true;
-                text.fontType= FontType.MSGOTHIC ;
+                text.fontType= FontType.MSGOTHIC;
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
