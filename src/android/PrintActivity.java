@@ -165,7 +165,7 @@ private String vacio;
                 text.engfontsize=FontLattice.SIXTEEN;
                 print.appendTextEntity2(text);
 
-                text.text="Ubique este tiquete en su vehiculo con esta cara hacia arriba en un lugar visible";
+                text.text="Ubique este tiquete en su vehículo con esta cara hacia arriba en un lugar visible";
                 text.isBoldFont=false;
                 text.engFontType= FontType.FZZDX;
                 text.align= Align.CENTER;
