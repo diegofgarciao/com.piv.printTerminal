@@ -30,7 +30,8 @@ private String rta;
 private String msgIn;
 
     @Override
-        public boolean execute(String action, final JSONArray args, CallbackContext callbackContext){
+        /*public boolean execute(String action, final JSONArray args, CallbackContext callbackContext){*/
+          public boolean execute(String action, final String args, CallbackContext callbackContext){
 
             if(action.equals("verificarPluginJava")){
                 rta = args + vuelta;
