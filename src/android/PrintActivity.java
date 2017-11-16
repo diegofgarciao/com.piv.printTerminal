@@ -36,8 +36,8 @@ private String rta;
             }
 
             else if (action.equals("printinTerminal")) {
-                Printer2 print = Printer2.getInstance();
 
+                Printer2 print = Printer2.getInstance();
 
                 TextEntity text =  new TextEntity("Texto prueba", null, false, null);
                 //TextEntity textOne =  new TextEntity(" ", null, false, null);
@@ -49,7 +49,7 @@ private String rta;
 
                      text.text="Centrado";
                      text.align= Align.CENTER;
-                     text.engfontsize=FontLattice.TWENTY_FOUR;
+                     text.engfontsize=FontLattice.SIXTEEN;
                      print.appendTextEntity2(text);
 
                      text.text="Centrado1";
@@ -59,7 +59,7 @@ private String rta;
 
                      text.text="Centrado2";
                      text.align= Align.LEFT;
-                     text.engfontsize=FontLattice.TWENTY_FOUR;
+                     text.engfontsize=FontLattice.FORTY_EIGHT;
                      print.appendTextEntity2(text);
 
                      text.text="Centrado3";
@@ -69,17 +69,17 @@ private String rta;
 
                      text.text="Centrado4";
                      text.align= Align.RIGHT;
-                     text.engfontsize=FontLattice.TWENTY_FOUR;
+                     text.engfontsize=FontLattice.THIRTY_TWO;
                      print.appendTextEntity2(text);
 
                      text.text="Centrado5";
                      text.align= Align.CENTER;
-                     text.engfontsize=FontLattice.TWENTY_FOUR;
+                     text.engfontsize=FontLattice.FORTY_EIGHT;
                      print.appendTextEntity2(text);
 
                      text.text="Centrado6";
                      text.align= Align.RIGHT;
-                     text.engfontsize=FontLattice.TWENTY_FOUR;
+                     text.engfontsize=FontLattice.SIXTEEN;
                      print.appendTextEntity2(text);
 
                      text.text="Centrado7";
@@ -89,12 +89,12 @@ private String rta;
 
                      text.text="Centrado8";
                      text.align= Align.CENTER;
-                     text.engfontsize=FontLattice.TWENTY_FOUR;
+                     text.engfontsize=FontLattice.THIRTY_TWO;
                      print.appendTextEntity2(text);
 
                      text.text="Centrado9";
                      text.align= Align.RIGHT;
-                     text.engfontsize=FontLattice.TWENTY_FOUR;
+                     text.engfontsize=FontLattice.FORTY_EIGHT;
                      print.appendTextEntity2(text);
 
                 PrintRespCode printRespCode = print.startPrint();
