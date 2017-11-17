@@ -106,12 +106,16 @@ private String vacio;
                     print.appendTextEntity2(text);
                     //----------------------------------------------------------------------------
                     ubicationPrint = jsonobject.getString("ubicacion");
+                    if(ubicationPrint == ""){
+                    callbackContext.success("Valueoff ubicacion");
+                    }else{
                     text.text=ubicationPrint;
                     text.isBoldFont=false;
                     text.engFontType= FontType.FZZDX;
                     text.align= Align.CENTER;
                     text.engfontsize=FontLattice.TWENTY_FOUR;
                     print.appendTextEntity2(text);
+                    }
                     //----------------------------------------------------------------------------
                     nitPrint = jsonobject.getString("nit");
                     text.text="NIT : " + nitPrint;

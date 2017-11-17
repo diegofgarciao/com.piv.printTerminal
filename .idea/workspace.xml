@@ -45,8 +45,8 @@
           <file leaf-file-name="PrintActivity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/android/PrintActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="141">
-                  <caret line="132" column="37" lean-forward="false" selection-start-line="132" selection-start-column="37" selection-end-line="132" selection-end-column="37" />
+                <state relative-caret-position="291">
+                  <caret line="109" column="63" lean-forward="false" selection-start-line="109" selection-start-column="63" selection-end-line="109" selection-end-column="63" />
                   <folding />
                 </state>
               </provider>
@@ -172,12 +172,12 @@
       <workItem from="1510686451198" duration="1438000" />
       <workItem from="1510774955531" duration="12307000" />
       <workItem from="1510849990852" duration="15460000" />
-      <workItem from="1510926331037" duration="7503000" />
+      <workItem from="1510926331037" duration="8557000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44978000" />
+    <option name="totallyTimeSpent" value="46032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
@@ -333,8 +333,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/android/PrintActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="132" column="37" lean-forward="false" selection-start-line="132" selection-start-column="37" selection-end-line="132" selection-end-column="37" />
+        <state relative-caret-position="291">
+          <caret line="109" column="63" lean-forward="false" selection-start-line="109" selection-start-column="63" selection-end-line="109" selection-end-column="63" />
           <folding />
         </state>
       </provider>
