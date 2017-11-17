@@ -51,10 +51,35 @@ private String vacio;
                 //TextEntity textOne =  new TextEntity(" ", null, false, null);
                 print.appendTextEntity2(text);
 
+            String titlePrint = new String();
+            String subtitlePrint = new String();
+            String ubicationPrint = new String();
+            String nitPrint = new String();
+            String addressPrint = new String();
+            String phonenumberPrint = new String();
+            String ticketnamePrint = new String();
+            String alertdatePrint = new String();
+            String limitdatePrint = new String();
+            String saledatePrint = new String();
+            String actualhourPrint = new String();
+            String licenseplatePrint = new String();
+            String timePrint = new String();
+            String valuecheckPrint = new String();
+            String alerthourPrint = new String();
+            String limithourPrint = new String();
+            String endhourPrint = new String();
+            String zonePrint = new String();
+            String saleidPrint = new String();
+            String alertidPrint = new String();
+            String fractionvaluePrint = new String();
+            String fractiontimePrint = new String();
+            String observationonePrint = new String();
+            String observationsecondPrint = new String();
+            String recommendationnamePrint = new String();
+            String recommendationtextPrint = new String();
+            String footeronePrint = new String();
+            String footersecondPrint = new String();
 
-                String titlePrint = new String();
-                String subtitlePrint = new String();
-                String ubicationPrint = new String();
 
                 JSONArray obj = new JSONArray();
                 obj = args;
@@ -87,15 +112,48 @@ private String vacio;
                     text.align= Align.CENTER;
                     text.engfontsize=FontLattice.TWENTY_FOUR;
                     print.appendTextEntity2(text);
+                    //----------------------------------------------------------------------------
+                    nitPrint = jsonobject.getString("nit");
+                    text.text=nitPrint;
+                    text.isBoldFont=true;
+                    text.engFontType= FontType.MSGOTHIC;
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.TWENTY_FOUR;
+                    print.appendTextEntity2(text);
+                    //---------------------------------------------------------------------------
+                    addressPrint = jsonobject.getString("direccion");
+                    text.text=addressPrint;
+                    text.isBoldFont=true;
+                    text.engFontType= FontType.MSGOTHIC;
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.TWENTY_FOUR;
+                    print.appendTextEntity2(text);
+                    //---------------------------------------------------------------------------
+                    phonenumberPrint = jsonobject.getString("telefono");
+                    text.text=phonenumberPrint;
+                    text.isBoldFont=true;
+                    text.engFontType= FontType.MSGOTHIC;
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.TWENTY_FOUR;
+                    print.appendTextEntity2(text);
+                    //---------------------------------------------------------------------------
+                    text.text="";
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.TWENTY_FOUR;
+                    print.appendTextEntity2(text);
+                    //---------------------------------------------------------------------------
+                    ticketnamePrint = jsonobject.getString("nombrerecibo");
+                    text.text=ticketnamePrint;
+                    text.isBoldFont=true;
+                    text.engFontType= FontType.FZZDX;
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.THIRTY_TWO;
+                    print.appendTextEntity2(text);
 
                 }
                 }catch(Exception e){
                 callbackContext.error(e.toString());
                 }
-
-
-
-
 
 
                 /*text.text="NIT : 890.980.331-6";
