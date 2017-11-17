@@ -122,7 +122,7 @@ private String vacio;
                     print.appendTextEntity2(text);
                     //---------------------------------------------------------------------------
                     addressPrint = jsonobject.getString("direccion");
-                    text.text="DIR : "addressPrint;
+                    text.text="DIR : " + addressPrint;
                     text.isBoldFont=true;
                     text.engFontType= FontType.MSGOTHIC;
                     text.align= Align.CENTER;
@@ -130,7 +130,7 @@ private String vacio;
                     print.appendTextEntity2(text);
                     //---------------------------------------------------------------------------
                     phonenumberPrint = jsonobject.getString("telefono");
-                    text.text="TEL : "phonenumberPrint;
+                    text.text="TEL : " + phonenumberPrint;
                     text.isBoldFont=true;
                     text.engFontType= FontType.MSGOTHIC;
                     text.align= Align.CENTER;
