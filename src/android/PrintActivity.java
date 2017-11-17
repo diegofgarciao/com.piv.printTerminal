@@ -106,7 +106,7 @@ private String vacio;
                     print.appendTextEntity2(text);
                     //----------------------------------------------------------------------------
                     ubicationPrint = jsonobject.getString("ubicacion");
-                    if(ubicationPrint == out ){
+                    if(ubicationPrint == null){
                     callbackContext.success("Valueoff ubicacion");
                     text.text="Valueoff ubicacion";
                     text.isBoldFont=false;
