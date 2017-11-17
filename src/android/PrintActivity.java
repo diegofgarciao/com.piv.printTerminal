@@ -32,18 +32,17 @@ private String msgIn;
 private String vacio;
 
     @Override
-        /*public boolean execute(String action, final JSONArray args, CallbackContext callbackContext){*/
-          public boolean execute(String action, final String args, final JSONArray args, CallbackContext callbackContext){
+        /*public boolean execute(String action, final String args, CallbackContext callbackContext){*/
+          public boolean execute(String action, final JSONArray args, CallbackContext callbackContext){
 
             if(action.equals("verificarPluginJava")){
-                rta = args ;
+                rta = args + out ;
                 callbackContext.success(rta);
             }
 
             else if (action.equals("printinTerminal")) {
 
                 vacio = out;
-                msgIn = args;
 
                 Printer2 print = Printer2.getInstance();
 
