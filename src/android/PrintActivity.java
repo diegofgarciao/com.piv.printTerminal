@@ -114,7 +114,7 @@ private String vacio;
                     print.appendTextEntity2(text);
                     //----------------------------------------------------------------------------
                     nitPrint = jsonobject.getString("nit");
-                    text.text=nitPrint;
+                    text.text="NIT : " + nitPrint;
                     text.isBoldFont=true;
                     text.engFontType= FontType.MSGOTHIC;
                     text.align= Align.CENTER;
