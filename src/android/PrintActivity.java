@@ -130,7 +130,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(nitPrint == "null"){
                         callbackContext.success("Valueoff nit");
                     }else {
-                        text.text = nitPrint;
+                        text.text = "NIT : " + nitPrint;
                         text.isBoldFont = true;
                         text.engFontType = FontType.MSGOTHIC;
                         text.align = Align.CENTER;
@@ -142,7 +142,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(addressPrint == "null"){
                         callbackContext.success("Valueoff direccion");
                     }else {
-                        text.text = addressPrint;
+                        text.text = "DIR : " + addressPrint;
                         text.isBoldFont = true;
                         text.engFontType = FontType.MSGOTHIC;
                         text.align = Align.CENTER;
@@ -154,7 +154,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(phonenumberPrint == "null"){
                         callbackContext.success("Valueoff telefono");
                     }else {
-                        text.text = phonenumberPrint;
+                        text.text = "TEL : " + phonenumberPrint;
                         text.isBoldFont = true;
                         text.engFontType = FontType.MSGOTHIC;
                         text.align = Align.CENTER;
