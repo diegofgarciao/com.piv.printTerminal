@@ -1,3 +1,4 @@
+
 package com.piv.print;
 
 import org.apache.cordova.CallbackContext;
@@ -25,31 +26,32 @@ import com.socsi.smartposapi.printer.TextEntity;
 
 public class PrintActivity extends CordovaPlugin {
 
-private CallbackContext callbackContext;
-private String vuelta = "PIVPluginPrintVerificado";
-private String out = "";
-private String rta;
-private String msgIn;
-private String vacio;
+    private CallbackContext callbackContext;
+    private String vuelta = "PIVPluginPrintVerificado";
+    private String out = "";
+    private String rta;
+    private String msgIn;
+    private String vacio;
 
     @Override
         /*public boolean execute(String action, final String args, CallbackContext callbackContext){*/
-          public boolean execute(String action, final JSONArray args, CallbackContext callbackContext){
+    public boolean execute(String action, final JSONArray args, CallbackContext callbackContext){
 
-            if(action.equals("verificarPluginJava")){
-                rta = args + out ;
-                callbackContext.success(rta);
-            }
+        if(action.equals("verificarPluginJava")){
+            rta = args + out ;
+            callbackContext.success(rta);
+        }
 
-            else if (action.equals("printinTerminal")) {
+        else if (action.equals("printinTerminal")) {
 
-                vacio = out;
+            vacio = out;
 
-                Printer2 print = Printer2.getInstance();
+            Printer2 print = Printer2.getInstance();
 
-                TextEntity text =  new TextEntity(vacio, null, false, null);
-                //TextEntity textOne =  new TextEntity(" ", null, false, null);
-                print.appendTextEntity2(text);
+            TextEntity text =  new TextEntity(vacio, null, false, null);
+            //TextEntity textOne =  new TextEntity(" ", null, false, null);
+            print.appendTextEntity2(text);
+
 
             String titlePrint = new String();
             String subtitlePrint = new String();
@@ -80,85 +82,117 @@ private String vacio;
             String footeronePrint = new String();
             String footersecondPrint = new String();
 
-
-                JSONArray obj = new JSONArray();
-                obj = args;
-                try{
+            JSONArray obj = new JSONArray();
+            obj = args;
+            try{
                 for(int i = 0; i < obj.length(); i++){
                     JSONObject jsonobject = obj.getJSONObject(i);
-                    //----------------------------------------------------------------------------
+                    //------------------------------------------------------------------------------
                     titlePrint = jsonobject.getString("titulo");
-                    text.text=titlePrint;
-                    text.isBoldFont=false;
-                    text.engFontType= FontType.FZZDX;
-                    text.align= Align.CENTER;
-                    text.engfontsize=FontLattice.TWENTY_FOUR;
-                    text.newline=true;
-                    print.appendTextEntity2(text);
-                    //----------------------------------------------------------------------------
+                    if(titlePrint == "null"){
+                        callbackContext.success("Valueoff titulo");
+                    }else {
+                        text.text = titlePrint;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        text.newline = true;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
                     subtitlePrint = jsonobject.getString("subtitulo");
-                    text.text=subtitlePrint;
-                    text.isBoldFont=false;
-                    text.engFontType= FontType.FZZDX;
-                    text.align= Align.CENTER;
-                    text.engfontsize=FontLattice.TWENTY_FOUR;
-                    text.newline=true;
-                    print.appendTextEntity2(text);
-                    //----------------------------------------------------------------------------
+                    if(subtitlePrint == "null"){
+                        callbackContext.success("Valueoff subtitulo");
+                    }else {
+                        text.text = subtitlePrint;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        text.newline = true;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
                     ubicationPrint = jsonobject.getString("ubicacion");
                     if(ubicationPrint == "null"){
-                    callbackContext.success("Valueoff ubicacion");
-
-                    }else{
-                    text.text=ubicationPrint;
-                    text.isBoldFont=false;
-                    text.engFontType= FontType.FZZDX;
-                    text.align= Align.CENTER;
-                    text.engfontsize=FontLattice.TWENTY_FOUR;
-                    print.appendTextEntity2(text);
+                        callbackContext.success("Valueoff ubicacion");
+                    }else {
+                        text.text = ubicationPrint;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
                     }
-                    //----------------------------------------------------------------------------
+                    //------------------------------------------------------------------------------
                     nitPrint = jsonobject.getString("nit");
-                    text.text="NIT : " + nitPrint;
-                    text.isBoldFont=true;
-                    text.engFontType= FontType.MSGOTHIC;
-                    text.align= Align.CENTER;
-                    text.engfontsize=FontLattice.TWENTY_FOUR;
-                    print.appendTextEntity2(text);
-                    //---------------------------------------------------------------------------
+                    if(nitPrint == "null"){
+                        callbackContext.success("Valueoff nit");
+                    }else {
+                        text.text = nitPrint;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.MSGOTHIC;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
                     addressPrint = jsonobject.getString("direccion");
-                    text.text="DIR : " + addressPrint;
-                    text.isBoldFont=true;
-                    text.engFontType= FontType.MSGOTHIC;
-                    text.align= Align.CENTER;
-                    text.engfontsize=FontLattice.TWENTY_FOUR;
-                    print.appendTextEntity2(text);
-                    //---------------------------------------------------------------------------
+                    if(addressPrint == "null"){
+                        callbackContext.success("Valueoff direccion");
+                    }else {
+                        text.text = addressPrint;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.MSGOTHIC;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
                     phonenumberPrint = jsonobject.getString("telefono");
-                    text.text="TEL : " + phonenumberPrint;
-                    text.isBoldFont=true;
-                    text.engFontType= FontType.MSGOTHIC;
-                    text.align= Align.CENTER;
-                    text.engfontsize=FontLattice.TWENTY_FOUR;
-                    print.appendTextEntity2(text);
-                    //---------------------------------------------------------------------------
+                    if(phonenumberPrint == "null"){
+                        callbackContext.success("Valueoff telefono");
+                    }else {
+                        text.text = phonenumberPrint;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.MSGOTHIC;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
                     text.text="";
                     text.align= Align.CENTER;
                     text.engfontsize=FontLattice.TWENTY_FOUR;
                     print.appendTextEntity2(text);
-                    //---------------------------------------------------------------------------
+                    //------------------------------------------------------------------------------
                     ticketnamePrint = jsonobject.getString("nombrerecibo");
-                    text.text=ticketnamePrint;
-                    text.isBoldFont=true;
-                    text.engFontType= FontType.FZZDX;
+                    if(ticketnamePrint == "null"){
+                        callbackContext.success("Valueoff nombrerecibo");
+                    }else {
+                        text.text = ticketnamePrint;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.THIRTY_TWO;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    text.text="";
                     text.align= Align.CENTER;
-                    text.engfontsize=FontLattice.THIRTY_TWO;
+                    text.engfontsize=FontLattice.TWENTY_FOUR;
                     print.appendTextEntity2(text);
+                    //------------------------------------------------------------------------------
 
                 }
-                }catch(Exception e){
+            }catch(Exception e){
                 callbackContext.error(e.toString());
-                }
+            }
+
+
+
+
 
 
                 /*text.text="NIT : 890.980.331-6";
@@ -308,10 +342,10 @@ private String vacio;
                 text.engfontsize=FontLattice.SIXTEEN;
                 print.appendTextEntity2(text);*/
 
-                PrintRespCode printRespCode = print.startPrint();
-                callbackContext.success(printRespCode.toString());
-                //Log.i("PrintActivity", printRespCode.toString().toString());
-             }
-            return true;
+            PrintRespCode printRespCode = print.startPrint();
+            callbackContext.success(printRespCode.toString());
+            //Log.i("PrintActivity", printRespCode.toString().toString());
         }
+        return true;
+    }
 }
