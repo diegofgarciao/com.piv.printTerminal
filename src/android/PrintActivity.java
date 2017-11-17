@@ -53,11 +53,15 @@ private String vacio;
 
 
                 String titlePrint = new String();
+                String subtitlePrint = new String();
+                String ubicationPrint = new String();
+
                 JSONArray obj = new JSONArray();
                 obj = args;
                 try{
                 for(int i = 0; i < obj.length(); i++){
                     JSONObject jsonobject = obj.getJSONObject(i);
+                    //----------------------------------------------------------------------------
                     titlePrint = jsonobject.getString("titulo");
                     text.text=titlePrint;
                     text.isBoldFont=false;
@@ -66,35 +70,35 @@ private String vacio;
                     text.engfontsize=FontLattice.TWENTY_FOUR;
                     text.newline=true;
                     print.appendTextEntity2(text);
+                    //----------------------------------------------------------------------------
+                    subtitlePrint = jsonobject.getString("subtitulo");
+                    text.text=subtitlePrint;
+                    text.isBoldFont=false;
+                    text.engFontType= FontType.FZZDX;
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.TWENTY_FOUR;
+                    text.newline=true;
+                    print.appendTextEntity2(text);
+                    //----------------------------------------------------------------------------
+                    ubicationPrint = jsonobject.getString("ubicacion");
+                    text.text=ubicationPrint;
+                    text.isBoldFont=false;
+                    text.engFontType= FontType.FZZDX;
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.TWENTY_FOUR;
+                    print.appendTextEntity2(text);
+
                 }
                 }catch(Exception e){
                 callbackContext.error(e.toString());
                 }
 
 
-                text.text="TIQUETE DE ESTACIONAMIENTO";
-                text.isBoldFont=false;
-                text.engFontType= FontType.FZZDX;
-                text.align= Align.CENTER;
-                text.engfontsize=FontLattice.TWENTY_FOUR;
-                text.newline=true;
-                print.appendTextEntity2(text);
 
-                text.text="ZONA DE ESTACIONAMIENTO REGULADO";
-                text.isBoldFont=false;
-                text.engFontType= FontType.FZZDX;
-                text.align= Align.CENTER;
-                text.engfontsize=FontLattice.TWENTY_FOUR;
-                print.appendTextEntity2(text);
 
-                /*text.text="SABANETA ANTIOQUIA";
-                text.isBoldFont=false;
-                text.engFontType= FontType.FZZDX;
-                text.align= Align.CENTER;
-                text.engfontsize=FontLattice.TWENTY_FOUR;
-                print.appendTextEntity2(text);
 
-                text.text="NIT : 890.980.331-6";
+
+                /*text.text="NIT : 890.980.331-6";
                 text.isBoldFont=true;
                 text.engFontType= FontType.MSGOTHIC;
                 text.align= Align.CENTER;
