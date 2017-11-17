@@ -50,6 +50,27 @@ private String vacio;
                 //TextEntity textOne =  new TextEntity(" ", null, false, null);
                 print.appendTextEntity2(text);
 
+
+                String titlePrint = new String();
+                JSONArray obj = new JSONArray();
+                obj = args;
+                try{
+                for(int i = 0; i < obj.length(); i++){
+                    JSONObject jsonobject = obj.getJSONObject(i);
+                    titlePrint = jsonobject.getString("titulo");
+                    text.text=titlePrint;
+                    text.isBoldFont=false;
+                    text.engFontType= FontType.FZZDX;
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.TWENTY_FOUR;
+                    text.newline=true;
+                    print.appendTextEntity2(text);
+                }
+                }catch(Exception e){
+                callbackContext.error(e.toString());
+                }
+
+
                 text.text="TIQUETE DE ESTACIONAMIENTO";
                 text.isBoldFont=false;
                 text.engFontType= FontType.FZZDX;
@@ -65,7 +86,7 @@ private String vacio;
                 text.engfontsize=FontLattice.TWENTY_FOUR;
                 print.appendTextEntity2(text);
 
-                text.text="SABANETA ANTIOQUIA";
+                /*text.text="SABANETA ANTIOQUIA";
                 text.isBoldFont=false;
                 text.engFontType= FontType.FZZDX;
                 text.align= Align.CENTER;
@@ -217,12 +238,7 @@ private String vacio;
                 text.text="";
                 text.align= Align.CENTER;
                 text.engfontsize=FontLattice.SIXTEEN;
-                print.appendTextEntity2(text);
-
-
-
-
-
+                print.appendTextEntity2(text);*/
 
                 PrintRespCode printRespCode = print.startPrint();
                 callbackContext.success(printRespCode.toString());
