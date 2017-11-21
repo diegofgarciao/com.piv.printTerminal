@@ -1359,7 +1359,7 @@ public class PrintActivity extends CordovaPlugin {
                         text.isBoldFont = true;
                         text.engFontType = FontType.FZZDX;
                         text.align = Align.CENTER;
-                        text.engfontsize = FontLattice.THIRTY_TWO;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
                         print.appendTextEntity2(text);
                     }
                     //------------------------------------------------------------------------------
@@ -1685,7 +1685,7 @@ public class PrintActivity extends CordovaPlugin {
                         text.isBoldFont = true;
                         text.engFontType = FontType.FZZDX;
                         text.align = Align.CENTER;
-                        text.engfontsize = FontLattice.THIRTY_TWO;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
                         print.appendTextEntity2(text);
                     }
                     //------------------------------------------------------------------------------
