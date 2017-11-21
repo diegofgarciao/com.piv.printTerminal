@@ -80,13 +80,13 @@ public class PrintActivity extends CordovaPlugin {
 
             JSONArray obj = new JSONArray();
             obj = args;
-            //try{
+            try{
                 for(int i = 0; i < obj.length(); i++){
                     JSONObject jsonobject = obj.getJSONObject(i);
                     //------------------------------------------------------------------------------
                     titlePrint = jsonobject.getString("titulo");
                     if(titlePrint == "null"){
-                        callbackContext.success("Valueoff titulo");
+                        //callbackContext.success("Valueoff titulo");
                     }else {
                         text.text = titlePrint;
                         text.isBoldFont = false;
@@ -99,7 +99,7 @@ public class PrintActivity extends CordovaPlugin {
                     //------------------------------------------------------------------------------
                     subtitlePrint = jsonobject.getString("subtitulo");
                     if(subtitlePrint == "null"){
-                        callbackContext.success("Valueoff subtitulo");
+                        //callbackContext.success("Valueoff subtitulo");
                     }else {
                         text.text = subtitlePrint;
                         text.isBoldFont = false;
@@ -112,7 +112,7 @@ public class PrintActivity extends CordovaPlugin {
                     //------------------------------------------------------------------------------
                     ubicationPrint = jsonobject.getString("ubicacion");
                     if(ubicationPrint == "null"){
-                        callbackContext.success("Valueoff ubicacion");
+                        //callbackContext.success("Valueoff ubicacion");
                     }else{
                         text.text = ubicationPrint;
                         text.isBoldFont = false;
@@ -457,7 +457,7 @@ public class PrintActivity extends CordovaPlugin {
                     text.engfontsize=FontLattice.SIXTEEN;
                     print.appendTextEntity2(text);
                 }
-            //}
+            }
             /*catch(Exception e){
                 callbackContext.error(e.toString());
             }*/
