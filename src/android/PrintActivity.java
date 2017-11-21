@@ -217,7 +217,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(alertdatePrint == "null"){
                         //callbackContext.success("Valueoff fechaalerta");
                     }else{
-                        text.text=alertdatePrint;
+                        text.text="Fecha Alerta: " + alertdatePrint;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
@@ -229,7 +229,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(limitdatePrint == "null"){
                         //callbackContext.success("Valueoff fechalimite");
                     }else{
-                        text.text=limitdatePrint;
+                        text.text="Fecha Limite: "+limitdatePrint;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
@@ -241,7 +241,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(saledatePrint == "null"){
                         //callbackContext.success("Valueoff fechaventa");
                     }else{
-                        text.text=saledatePrint;
+                        text.text="Fecha Pago: "+saledatePrint;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
@@ -253,7 +253,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(actualhourPrint == "null"){
                         //callbackContext.success("Valueoff horaactual");
                     }else{
-                        text.text=actualhourPrint;
+                        text.text="Hora: " + actualhourPrint;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
@@ -265,7 +265,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(licenseplatePrint == "null"){
                         //callbackContext.success("Valueoff placa");
                     }else{
-                        text.text=licenseplatePrint;
+                        text.text="PLACA: " + licenseplatePrint;
                         text.isBoldFont=true;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
@@ -277,7 +277,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(timePrint == "null"){
                         //callbackContext.success("Valueoff tiempo");
                     }else{
-                        text.text=timePrint;
+                        text.text="Tiempo: "+timePrint;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
@@ -289,7 +289,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(valuecheckPrint == "null"){
                         //callbackContext.success("Valueoff valorpagado");
                     }else{
-                        text.text=valuecheckPrint;
+                        text.text="Valor Pagado: "valuecheckPrint;
                         text.isBoldFont=true;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
@@ -301,7 +301,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(alerthourPrint == "null"){
                         //callbackContext.success("Valueoff horaalerta");
                     }else{
-                        text.text=timePrint;
+                        text.text="Valido desde: "+alerthourPrint;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
@@ -311,9 +311,9 @@ public class PrintActivity extends CordovaPlugin {
                     //------------------------------------------------------------------------------
                     limithourPrint = jsonobject.getString("horalimite");
                     if(limithourPrint == "null"){
-                       //callbackContext.success("Valueoff horalimite");
+                        //callbackContext.success("Valueoff horalimite");
                     }else{
-                        text.text=timePrint;
+                        text.text="Valido hasta: " + limithourPrint;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
@@ -325,7 +325,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(endhourPrint == "null"){
                         //callbackContext.success("Valueoff horafin");
                     }else{
-                        text.text=timePrint;
+                        text.text="Hora Fin: " + timePrint;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
@@ -337,7 +337,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(zonePrint == "null"){
                         //callbackContext.success("Valueoff zona");
                     }else{
-                        text.text=zonePrint;
+                        text.text="Zona: " + zonePrint;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
@@ -349,7 +349,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(alertidPrint == "null"){
                         //callbackContext.success("Valueoff idalerta");
                     }else{
-                        text.text=alertidPrint;
+                        text.text="IdAlerta: " + alertidPrint;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
@@ -361,7 +361,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(saleidPrint == "null"){
                         //callbackContext.success("Valueoff idventa");
                     }else{
-                        text.text=saleidPrint;
+                        text.text="Consecutivo: " + saleidPrint;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
@@ -373,7 +373,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(fractionvaluePrint == "null"){
                         //callbackContext.success("Valueoff valorfraccion");
                     }else{
-                        text.text=fractionvaluePrint;
+                        text.text="Valor: "+fractionvaluePrint;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
@@ -385,7 +385,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(fractiontimePrint == "null"){
                         //callbackContext.success("Valueoff tiempofraccion");
                     }else{
-                        text.text=fractiontimePrint;
+                        text.text="Tarifa: " + fractiontimePrint;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
@@ -405,7 +405,7 @@ public class PrintActivity extends CordovaPlugin {
                         text.text=observationonePrint;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
-                        text.align= Align.LEFT;
+                        text.align= Align.CENTER;
                         text.engfontsize=FontLattice.TWENTY_FOUR;
                         print.appendTextEntity2(text);
                     }
@@ -417,7 +417,7 @@ public class PrintActivity extends CordovaPlugin {
                         text.text=observationsecondPrint;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
-                        text.align= Align.LEFT;
+                        text.align= Align.CENTER;
                         text.engfontsize=FontLattice.TWENTY_FOUR;
                         print.appendTextEntity2(text);
                     }
@@ -431,12 +431,12 @@ public class PrintActivity extends CordovaPlugin {
                     if(recommendationnamePrint == "null"){
                         //callbackContext.success("Valueoff nombrerecomendaciones");
                     }else{
-                    text.text=recommendationnamePrint;
-                    text.isBoldFont=true;
-                    text.engFontType= FontType.FZZDX;
-                    text.align= Align.LEFT;
-                    text.engfontsize=FontLattice.TWENTY_FOUR;
-                    print.appendTextEntity2(text);
+                        text.text=recommendationnamePrint;
+                        text.isBoldFont=true;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
                     }
                     //------------------------------------------------------------------------------
                     recommendationtextPrint = jsonobject.getString("textorecomendaciones");
@@ -632,7 +632,7 @@ public class PrintActivity extends CordovaPlugin {
                     if (alertdateGenerarAlerta == "null") {
                         //callbackContext.success("Valueoff fechalerta");
                     } else {
-                        text.text = alertdateGenerarAlerta;
+                        text.text = "Fecha Alerta: " + alertdateGenerarAlerta;
                         text.isBoldFont = false;
                         text.engFontType = FontType.FZZDX;
                         text.align = Align.LEFT;
@@ -644,7 +644,7 @@ public class PrintActivity extends CordovaPlugin {
                     if (alerthourGenerarAlerta == "null") {
                         //callbackContext.success("Valueoff horaalerta");
                     } else {
-                        text.text = alerthourGenerarAlerta;
+                        text.text = "Hora : " + alerthourGenerarAlerta;
                         text.isBoldFont = false;
                         text.engFontType = FontType.FZZDX;
                         text.align = Align.LEFT;
@@ -656,7 +656,7 @@ public class PrintActivity extends CordovaPlugin {
                     if (licenseplateGenerarAlerta == "null") {
                         //callbackContext.success("Valueoff placa");
                     } else {
-                        text.text = licenseplateGenerarAlerta;
+                        text.text = "PLACA: " + licenseplateGenerarAlerta;
                         text.isBoldFont = true;
                         text.engFontType = FontType.FZZDX;
                         text.align = Align.LEFT;
@@ -668,7 +668,7 @@ public class PrintActivity extends CordovaPlugin {
                     if (zoneGenerarAlerta == "null") {
                         //callbackContext.success("Valueoff zona");
                     } else {
-                        text.text = zoneGenerarAlerta;
+                        text.text = "Zona: " + zoneGenerarAlerta;
                         text.isBoldFont = false;
                         text.engFontType = FontType.FZZDX;
                         text.align = Align.LEFT;
@@ -680,7 +680,7 @@ public class PrintActivity extends CordovaPlugin {
                     if (alertidGenerarAlerta == "null") {
                         //callbackContext.success("Valueoff idalerta");
                     } else {
-                        text.text = alertidGenerarAlerta;
+                        text.text = "Consecutivo: " + alertidGenerarAlerta;
                         text.isBoldFont = false;
                         text.engFontType = FontType.FZZDX;
                         text.align = Align.LEFT;
@@ -692,7 +692,7 @@ public class PrintActivity extends CordovaPlugin {
                     if (fractiontimeGenerarAlerta == "null") {
                         //callbackContext.success("Valueoff tiempofraccion");
                     } else {
-                        text.text = fractiontimeGenerarAlerta;
+                        text.text = "Fraccion: " + fractiontimeGenerarAlerta;
                         text.isBoldFont = false;
                         text.engFontType = FontType.FZZDX;
                         text.align = Align.LEFT;
@@ -704,7 +704,7 @@ public class PrintActivity extends CordovaPlugin {
                     if (fractionvalueGenerarAlerta == "null") {
                         //callbackContext.success("Valueoff valorfraccion");
                     } else {
-                        text.text = fractionvalueGenerarAlerta;
+                        text.text = "Valor: " +  fractionvalueGenerarAlerta;
                         text.isBoldFont = false;
                         text.engFontType = FontType.FZZDX;
                         text.align = Align.LEFT;
@@ -724,7 +724,7 @@ public class PrintActivity extends CordovaPlugin {
                         text.text = observationoneGenerarAlerta;
                         text.isBoldFont = false;
                         text.engFontType = FontType.FZZDX;
-                        text.align = Align.LEFT;
+                        text.align = Align.CENTER;
                         text.engfontsize = FontLattice.TWENTY_FOUR;
                         print.appendTextEntity2(text);
                     }
@@ -736,7 +736,7 @@ public class PrintActivity extends CordovaPlugin {
                         text.text = observationsecondGenerarAlerta;
                         text.isBoldFont = false;
                         text.engFontType = FontType.FZZDX;
-                        text.align = Align.LEFT;
+                        text.align = Align.CENTER;
                         text.engfontsize = FontLattice.TWENTY_FOUR;
                         print.appendTextEntity2(text);
                     }
@@ -816,6 +816,428 @@ public class PrintActivity extends CordovaPlugin {
             PrintRespCode printRespCode = print.startPrint();
             callbackContext.success(printRespCode.toString());
             //Log.i("PrintActivity", printRespCode.toString().toString());
+        }else if(action.equals("printPagaralerta")){
+
+            vacio = out;
+            Printer2 print = Printer2.getInstance();
+            TextEntity text =  new TextEntity(vacio, null, false, null);
+            //TextEntity textOne =  new TextEntity(" ", null, false, null);
+            print.appendTextEntity2(text);
+
+            String titlePagaralerta = new String();
+            String subtitlePagaralerta = new String();
+            String ubicationPagaralerta = new String();
+            String nitPagaralerta = new String();
+            String addressPagaralerta = new String();
+            String phonenumberPagaralerta = new String();
+            String ticketnamePagaralerta = new String();
+            String alertdatePagaralerta = new String();
+            String limitdatePagaralerta = new String();
+            String saledatePagaralerta = new String();
+            String actualhourPagaralerta = new String();
+            String licenseplatePagaralerta = new String();
+            String timePagaralerta = new String();
+            String valuecheckPagaralerta = new String();
+            String alerthourPagaralerta = new String();
+            String limithourPagaralerta = new String();
+            String endhourPagaralerta = new String();
+            String zonePagaralerta = new String();
+            String saleidPagaralerta = new String();
+            String alertidPagaralerta = new String();
+            String fractionvaluePagaralerta = new String();
+            String fractiontimePagaralerta = new String();
+            String observationonePagaralerta = new String();
+            String observationsecondPagaralerta = new String();
+            String recommendationnamePagaralerta = new String();
+            String recommendationtextPagaralerta = new String();
+            String footeronePagaralerta = new String();
+            String footersecondPagaralerta = new String();
+
+            JSONArray obj = new JSONArray();
+            obj = args;
+            try{
+                for(int i = 0; i < obj.length(); i++){
+                    JSONObject jsonobject = obj.getJSONObject(i);
+                    //------------------------------------------------------------------------------
+                    titlePagaralerta = jsonobject.getString("titulo");
+                    if(titlePagaralerta == "null"){
+                        //callbackContext.success("Valueoff titulo");
+                    }else {
+                        text.text = titlePagaralerta;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        text.newline = true;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    subtitlePagaralerta = jsonobject.getString("subtitulo");
+                    if(subtitlePagaralerta == "null"){
+                        //callbackContext.success("Valueoff subtitulo");
+                    }else {
+                        text.text = subtitlePagaralerta;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        text.newline = true;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    ubicationPagaralerta = jsonobject.getString("ubicacion");
+                    if(ubicationPagaralerta == "null"){
+                        //callbackContext.success("Valueoff ubicacion");
+                    }else{
+                        text.text = ubicationPagaralerta;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    nitPagaralerta = jsonobject.getString("nit");
+                    if(nitPagaralerta == "null"){
+                        //callbackContext.success("Valueoff nit");
+                    }else {
+                        text.text = "NIT : " + nitPagaralerta;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.MSGOTHIC;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    addressPagaralerta = jsonobject.getString("direccion");
+                    if(addressPagaralerta == "null"){
+                        //callbackContext.success("Valueoff direccion");
+                    }else {
+                        text.text = "DIR : " + addressPagaralerta;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.MSGOTHIC;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    phonenumberPagaralerta = jsonobject.getString("telefono");
+                    if(phonenumberPagaralerta == "null"){
+                        //callbackContext.success("Valueoff telefono");
+                    }else {
+                        text.text = "TEL : " + phonenumberPagaralerta;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.MSGOTHIC;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    text.text="";
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.TWENTY_FOUR;
+                    print.appendTextEntity2(text);
+                    //------------------------------------------------------------------------------
+                    ticketnamePagaralerta = jsonobject.getString("nombrerecibo");
+                    if(ticketnamePagaralerta == "null"){
+                        //callbackContext.success("Valueoff nombrerecibo");
+                    }else {
+                        text.text = ticketnamePagaralerta;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.THIRTY_TWO;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    text.text="";
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.TWENTY_FOUR;
+                    print.appendTextEntity2(text);
+                    //------------------------------------------------------------------------------
+                    alertdatePagaralerta = jsonobject.getString("fechaalerta");
+                    if(alertdatePagaralerta == "null"){
+                        //callbackContext.success("Valueoff fechaalerta");
+                    }else{
+                        text.text="Fecha Alerta: " + alertdatePagaralerta;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    limitdatePagaralerta = jsonobject.getString("fechalimite");
+                    if(limitdatePagaralerta == "null"){
+                        //callbackContext.success("Valueoff fechalimite");
+                    }else{
+                        text.text="Fecha Limite: "+ limitdatePagaralerta;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    saledatePagaralerta = jsonobject.getString("fechaventa");
+                    if(saledatePagaralerta == "null"){
+                        //callbackContext.success("Valueoff fechaventa");
+                    }else{
+                        text.text="Fecha Pago: "+ saledatePagaralerta;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    actualhourPagaralerta = jsonobject.getString("horaactual");
+                    if(actualhourPagaralerta == "null"){
+                        //callbackContext.success("Valueoff horaactual");
+                    }else{
+                        text.text="Hora: " + actualhourPagaralerta;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    licenseplatePagaralerta =  jsonobject.getString("placa");
+                    if(licenseplatePagaralerta == "null"){
+                        //callbackContext.success("Valueoff placa");
+                    }else{
+                        text.text="PLACA: " + licenseplatePagaralerta;
+                        text.isBoldFont=true;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.THIRTY_TWO;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    timePagaralerta = jsonobject.getString("tiempo");
+                    if(timePagaralerta == "null"){
+                        //callbackContext.success("Valueoff tiempo");
+                    }else{
+                        text.text="Tiempo: "+timePagaralerta;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    valuecheckPagaralerta = jsonobject.getString("valorpagado");
+                    if(valuecheckPagaralerta == "null"){
+                        //callbackContext.success("Valueoff valorpagado");
+                    }else{
+                        text.text="Valor Pagado: " + valuecheckPagaralerta;
+                        text.isBoldFont=true;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.THIRTY_TWO;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    alerthourPagaralerta = jsonobject.getString("horaalerta");
+                    if(alerthourPagaralerta == "null"){
+                        //callbackContext.success("Valueoff horaalerta");
+                    }else{
+                        text.text="Valido desde: "+ alerthourPagaralerta;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    limithourPagaralerta = jsonobject.getString("horalimite");
+                    if(limithourPagaralerta == "null"){
+                        //callbackContext.success("Valueoff horalimite");
+                    }else{
+                        text.text="Valido hasta: " + limithourPagaralerta;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    endhourPagaralerta = jsonobject.getString("horafin");
+                    if(endhourPagaralerta == "null"){
+                        //callbackContext.success("Valueoff horafin");
+                    }else{
+                        text.text="Hora Fin: " + endhourPagaralerta;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    zonePagaralerta = jsonobject.getString("zona");
+                    if(zonePagaralerta == "null"){
+                        //callbackContext.success("Valueoff zona");
+                    }else{
+                        text.text="Zona: " + zonePagaralerta;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    alertidPagaralerta = jsonobject.getString("idalerta");
+                    if(alertidPagaralerta == "null"){
+                        //callbackContext.success("Valueoff idalerta");
+                    }else{
+                        text.text="IdAlerta: " + alertidPagaralerta;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    saleidPagaralerta = jsonobject.getString("idventa");
+                    if(saleidPagaralerta == "null"){
+                        //callbackContext.success("Valueoff idventa");
+                    }else{
+                        text.text="Consecutivo: " + saleidPagaralerta;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    fractionvaluePagaralerta = jsonobject.getString("valorfraccion");
+                    if(fractionvaluePagaralerta == "null"){
+                        //callbackContext.success("Valueoff valorfraccion");
+                    }else{
+                        text.text="Valor: " + fractionvaluePagaralerta;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    fractiontimePagaralerta = jsonobject.getString("tiempofraccion");
+                    if(fractiontimePagaralerta == "null"){
+                        //callbackContext.success("Valueoff tiempofraccion");
+                    }else{
+                        text.text="Tarifa: " + fractiontimePagaralerta;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    text.text="";
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.TWENTY_FOUR;
+                    print.appendTextEntity2(text);
+                    //------------------------------------------------------------------------------
+                    observationonePagaralerta = jsonobject.getString("observacion1");
+                    if(observationonePagaralerta == "null"){
+                        //callbackContext.success("Valueoff observacion1");
+                    }else{
+                        text.text=observationonePagaralerta;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.CENTER;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    observationsecondPagaralerta = jsonobject.getString("observacion2");
+                    if(observationsecondPagaralerta == "null"){
+                        //callbackContext.success("Valueoff observacion1");
+                    }else{
+                        text.text=observationsecondPagaralerta;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.CENTER;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    text.text="";
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.TWENTY_FOUR;
+                    print.appendTextEntity2(text);
+                    //------------------------------------------------------------------------------
+                    recommendationnamePagaralerta = jsonobject.getString("nombrerecomendaciones");
+                    if(recommendationnamePagaralerta == "null"){
+                        //callbackContext.success("Valueoff nombrerecomendaciones");
+                    }else{
+                        text.text=recommendationnamePagaralerta;
+                        text.isBoldFont=true;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    recommendationtextPagaralerta = jsonobject.getString("textorecomendaciones");
+                    if(recommendationtextPagaralerta == "null"){
+                        //callbackContext.success("Valueoff textorecomendaciones");
+                    }else{
+                        text.text = recommendationtextPagaralerta;
+                        text.isBoldFont=true;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.SIXTEEN;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    text.text="";
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.SIXTEEN;
+                    print.appendTextEntity2(text);
+                    //------------------------------------------------------------------------------
+                    footeronePagaralerta = jsonobject.getString("pie1");
+                    if(footeronePagaralerta == "null"){
+                        //callbackContext.success("Valueoff pie1");
+                    }else{
+                        text.text=footeronePagaralerta;
+                        text.isBoldFont=true;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.CENTER;
+                        text.engfontsize=FontLattice.SIXTEEN;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    footersecondPagaralerta = jsonobject.getString("pie2");
+                    if(footersecondPagaralerta == "null"){
+                        //callbackContext.success("Valueoff pie2");
+                    }else{
+                        text.text=footersecondPagaralerta;
+                        text.isBoldFont=true;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.CENTER;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    text.text="";
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.SIXTEEN;
+                    print.appendTextEntity2(text);
+                    //------------------------------------------------------------------------------
+                    text.text="";
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.SIXTEEN;
+                    print.appendTextEntity2(text);
+                }
+            }catch(Exception e){
+                callbackContext.error(e.toString());
+            }
+            //--------------------------------------------------------------------------------------
+            PrintRespCode printRespCode = print.startPrint();
+            callbackContext.success(printRespCode.toString());
         }
         return true;
     }

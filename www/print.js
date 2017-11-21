@@ -9,10 +9,14 @@ module.exports = (function(){
     var imprimirGenerarAlerta = function(args,successCallback, errorCallback){
         cordova.exec(successCallback, errorCallback, "print", "printGenerarAlerta", [args]);};
 
+    var imprimirPagaralerta = function(args,successCallback, errorCallback){
+        cordova.exec(successCallback, errorCallback, "print", "printPagaralerta", [args]);};
+
     return {
         imprimirPrepago:imprimirPrepago,
         verificarPlugin:verificarPlugin,
-        imprimirGenerarAlerta:imprimirGenerarAlerta
+        imprimirGenerarAlerta:imprimirGenerarAlerta,
+        imprimirPagaralerta:imprimirPagaralerta
     };
 
 })();
