@@ -289,7 +289,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(valuecheckPrint == "null"){
                         //callbackContext.success("Valueoff valorpagado");
                     }else{
-                        text.text="Valor Pagado: "valuecheckPrint;
+                        text.text="Valor Pagado: "+valuecheckPrint;
                         text.isBoldFont=true;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
