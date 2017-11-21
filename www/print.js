@@ -12,11 +12,16 @@ module.exports = (function(){
     var imprimirPagaralerta = function(args,successCallback, errorCallback){
         cordova.exec(successCallback, errorCallback, "print", "printPagaralerta", [args]);};
 
+    var imprimirDuplicadoGeneraralerta = function(args,successCallback, errorCallback){
+        cordova.exec(successCallback, errorCallback, "print", "printDuplicadoGenerarAlerta", [args]);};
+
+
     return {
         imprimirPrepago:imprimirPrepago,
         verificarPlugin:verificarPlugin,
         imprimirGenerarAlerta:imprimirGenerarAlerta,
-        imprimirPagaralerta:imprimirPagaralerta
+        imprimirPagaralerta:imprimirPagaralerta,
+        imprimirDuplicadoGeneraralerta:imprimirDuplicadoGeneraralerta
     };
 
 })();

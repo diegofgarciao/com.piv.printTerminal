@@ -289,7 +289,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(valuecheckPrint == "null"){
                         //callbackContext.success("Valueoff valorpagado");
                     }else{
-                        text.text="Valor Pagado: "+valuecheckPrint;
+                        text.text="Valor Pagado: "valuecheckPrint;
                         text.isBoldFont=true;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
@@ -1238,6 +1238,324 @@ public class PrintActivity extends CordovaPlugin {
             //--------------------------------------------------------------------------------------
             PrintRespCode printRespCode = print.startPrint();
             callbackContext.success(printRespCode.toString());
+        }else if(action.equals("printDuplicadoGenerarAlerta")){
+            vacio = out;
+            Printer2 print = Printer2.getInstance();
+            TextEntity text =  new TextEntity(vacio, null, false, null);
+            //TextEntity textOne =  new TextEntity(" ", null, false, null);
+            print.appendTextEntity2(text);
+
+            String titleDupliGenerarAlerta = new String();
+            String subtitleDupliGenerarAlerta = new String();
+            String ubicationDupliGenerarAlerta = new String();
+            String nitDupliGenerarAlerta = new String();
+            String addressDupliGenerarAlerta = new String();
+            String phonenumberDupliGenerarAlerta = new String();
+            String ticketnameDupliGenerarAlerta = new String();
+            String alertdateDupliGenerarAlerta = new String();
+            String alerthourDupliGenerarAlerta = new String();
+            String licenseplateDupliGenerarAlerta = new String();
+            String zoneDupliGenerarAlerta = new String();
+            String alertidDupliGenerarAlerta = new String();
+            String fractiontimeDupliGenerarAlerta = new String();
+            String fractionvalueDupliGenerarAlerta = new String();
+            String observationoneDupliGenerarAlerta = new String();
+            String observationsecondDupliGenerarAlerta = new String();
+            String recommendationnameDupliGenerarAlerta = new String();
+            String recommendationtextDupliGenerarAlerta = new String();
+            String footeroneDupliGenerarAlerta = new String();
+            String footersecondDupliGenerarAlerta = new String();
+
+            JSONArray obj = new JSONArray();
+            obj = args;
+            try{
+                for(int i = 0; i < obj.length(); i++) {
+                    JSONObject jsonobject = obj.getJSONObject(i);
+                    //------------------------------------------------------------------------------
+                    titleDupliGenerarAlerta = jsonobject.getString("titulo");
+                    if (titleDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff titulo");
+                    } else {
+                        text.text = titleDupliGenerarAlerta;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        text.newline = true;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    subtitleDupliGenerarAlerta = jsonobject.getString("subtitulo");
+                    if (subtitleDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff subtitulo");
+                    } else {
+                        text.text = subtitleDupliGenerarAlerta;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        text.newline = true;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    ubicationDupliGenerarAlerta = jsonobject.getString("ubicacion");
+                    if (ubicationDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff ubicacion");
+                    } else {
+                        text.text = ubicationDupliGenerarAlerta;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    nitDupliGenerarAlerta = jsonobject.getString("nit");
+                    if (nitDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff nit");
+                    } else {
+                        text.text = "NIT : " + nitDupliGenerarAlerta;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.MSGOTHIC;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    addressDupliGenerarAlerta = jsonobject.getString("direccion");
+                    if (addressDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff direccion");
+                    } else {
+                        text.text = "DIR : " + addressDupliGenerarAlerta;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.MSGOTHIC;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    phonenumberDupliGenerarAlerta = jsonobject.getString("telefono");
+                    if (phonenumberDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff telefono");
+                    } else {
+                        text.text = "TEL : " + phonenumberDupliGenerarAlerta;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.MSGOTHIC;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    text.text = "";
+                    text.align = Align.CENTER;
+                    text.engfontsize = FontLattice.TWENTY_FOUR;
+                    print.appendTextEntity2(text);
+                    //------------------------------------------------------------------------------
+                    ticketnameDupliGenerarAlerta = jsonobject.getString("nombrerecibo");
+                    if (ticketnameDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff nombrerecibo");
+                    } else {
+                        text.text = ticketnameDupliGenerarAlerta;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.THIRTY_TWO;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    text.text = "";
+                    text.align = Align.CENTER;
+                    text.engfontsize = FontLattice.TWENTY_FOUR;
+                    print.appendTextEntity2(text);
+                    //------------------------------------------------------------------------------
+                    alertdateDupliGenerarAlerta = jsonobject.getString("fechaalerta");
+                    if (alertdateDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff fechalerta");
+                    } else {
+                        text.text = "Fecha Alerta: " + alertdateDupliGenerarAlerta;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.LEFT;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    alerthourDupliGenerarAlerta = jsonobject.getString("horaalerta");
+                    if (alerthourDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff horaalerta");
+                    } else {
+                        text.text = "Hora : " + alerthourDupliGenerarAlerta;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.LEFT;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    licenseplateDupliGenerarAlerta = jsonobject.getString("placa");
+                    if (licenseplateDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff placa");
+                    } else {
+                        text.text = "PLACA: " + licenseplateDupliGenerarAlerta;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.LEFT;
+                        text.engfontsize = FontLattice.THIRTY_TWO;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    zoneDupliGenerarAlerta = jsonobject.getString("zona");
+                    if (zoneDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff zona");
+                    } else {
+                        text.text = "Zona: " + zoneDupliGenerarAlerta;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.LEFT;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    alertidDupliGenerarAlerta = jsonobject.getString("idalerta");
+                    if (alertidDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff idalerta");
+                    } else {
+                        text.text = "Consecutivo: " + alertidDupliGenerarAlerta;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.LEFT;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    fractiontimeDupliGenerarAlerta = jsonobject.getString("tiempofraccion");
+                    if (fractiontimeDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff tiempofraccion");
+                    } else {
+                        text.text = "Fraccion: " + fractiontimeDupliGenerarAlerta;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.LEFT;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    fractionvalueDupliGenerarAlerta = jsonobject.getString("valorfraccion");
+                    if (fractionvalueDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff valorfraccion");
+                    } else {
+                        text.text = "Valor: " +  fractionvalueDupliGenerarAlerta;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.LEFT;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    text.text = "";
+                    text.align = Align.CENTER;
+                    text.engfontsize = FontLattice.TWENTY_FOUR;
+                    print.appendTextEntity2(text);
+                    //------------------------------------------------------------------------------
+                    observationoneDupliGenerarAlerta = jsonobject.getString("observacion1");
+                    if (observationoneDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff observacion1");
+                    } else {
+                        text.text = observationoneDupliGenerarAlerta;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    observationsecondDupliGenerarAlerta = jsonobject.getString("observacion2");
+                    if (observationsecondDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff observacion1");
+                    } else {
+                        text.text = observationsecondDupliGenerarAlerta;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    text.text = "";
+                    text.align = Align.CENTER;
+                    text.engfontsize = FontLattice.TWENTY_FOUR;
+                    print.appendTextEntity2(text);
+                    //------------------------------------------------------------------------------
+                    recommendationnameDupliGenerarAlerta = jsonobject.getString("nombrerecomendaciones");
+                    if (recommendationnameDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff nombrerecomendaciones");
+                    } else {
+                        text.text = recommendationnameDupliGenerarAlerta;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.LEFT;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    recommendationtextDupliGenerarAlerta = jsonobject.getString("textorecomendaciones");
+                    if (recommendationtextDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff textorecomendaciones");
+                    } else {
+                        text.text = recommendationtextDupliGenerarAlerta;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.LEFT;
+                        text.engfontsize = FontLattice.SIXTEEN;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    text.text = "";
+                    text.align = Align.CENTER;
+                    text.engfontsize = FontLattice.SIXTEEN;
+                    print.appendTextEntity2(text);
+                    //------------------------------------------------------------------------------
+                    footeroneDupliGenerarAlerta = jsonobject.getString("pie1");
+                    if (footeroneDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff pie1");
+                    } else {
+                        text.text = footeroneDupliGenerarAlerta;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.SIXTEEN;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    footersecondDupliGenerarAlerta = jsonobject.getString("pie2");
+                    if (footersecondDupliGenerarAlerta == "null") {
+                        //callbackContext.success("Valueoff pie2");
+                    }else {
+                        text.text = footersecondDupliGenerarAlerta;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    text.text = "";
+                    text.align = Align.CENTER;
+                    text.engfontsize = FontLattice.SIXTEEN;
+                    print.appendTextEntity2(text);
+                    //------------------------------------------------------------------------------
+                    text.text = "";
+                    text.align = Align.CENTER;
+                    text.engfontsize = FontLattice.SIXTEEN;
+                    print.appendTextEntity2(text);
+                }
+            }catch (Exception e){
+                callbackContext.error(e.toString());
+            }
+            //------------------------------------------------------------------------------
+            PrintRespCode printRespCode = print.startPrint();
+            callbackContext.success(printRespCode.toString());
+            //Log.i("PrintActivity", printRespCode.toString().toString());
         }
         return true;
     }
