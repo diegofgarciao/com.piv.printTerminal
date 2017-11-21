@@ -115,7 +115,7 @@ public class PrintActivity extends CordovaPlugin {
                     ubicationPrint = jsonobject.getString("ubicacion");
                     if(ubicationPrint == "null"){
                         callbackContext.success("Valueoff ubicacion");
-                    }else {
+                    }else{
                         text.text = ubicationPrint;
                         text.isBoldFont = false;
                         text.engFontType = FontType.FZZDX;
@@ -458,14 +458,13 @@ public class PrintActivity extends CordovaPlugin {
                     text.align= Align.CENTER;
                     text.engfontsize=FontLattice.SIXTEEN;
                     print.appendTextEntity2(text);
-                    //------------------------------------------------------------------------------
-                    PrintRespCode printRespCode = print.startPrint();
-                    callbackContext.success(printRespCode.toString());
-                    //Log.i("PrintActivity", printRespCode.toString().toString());
                 }
             }catch(Exception e){
                 callbackContext.error(e.toString());
             }
+            //------------------------------------------------------------------------------
+            PrintRespCode printRespCode = print.startPrint();
+            callbackContext.success(printRespCode.toString());
         }else if(action.equals("printGenerarAlerta"))
         {
             vacio = out;
@@ -777,14 +776,15 @@ public class PrintActivity extends CordovaPlugin {
                     text.align = Align.CENTER;
                     text.engfontsize = FontLattice.SIXTEEN;
                     print.appendTextEntity2(text);
-                    //------------------------------------------------------------------------------
-                    PrintRespCode printRespCode = print.startPrint();
-                    callbackContext.success(printRespCode.toString());
-                    //Log.i("PrintActivity", printRespCode.toString().toString());
+
                 }
             }catch (Exception e){
                 callbackContext.error(e.toString());
             }
+            //------------------------------------------------------------------------------
+            PrintRespCode printRespCode = print.startPrint();
+            callbackContext.success(printRespCode.toString());
+            //Log.i("PrintActivity", printRespCode.toString().toString());
         }
         return true;
     }
