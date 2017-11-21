@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08f54e73-0929-4168-8a5e-99e2ca11b627" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="08f54e73-0929-4168-8a5e-99e2ca11b627" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -19,8 +17,8 @@
       <file leaf-file-name="PrintActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/android/PrintActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6043">
-              <caret line="1361" column="66" lean-forward="false" selection-start-line="1361" selection-start-column="66" selection-end-line="1361" selection-end-column="66" />
+            <state relative-caret-position="4">
+              <caret line="1844" column="67" lean-forward="false" selection-start-line="1844" selection-start-column="67" selection-end-line="1844" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -157,12 +155,12 @@
       <workItem from="1510926331037" duration="12200000" />
       <workItem from="1511189658091" duration="405000" />
       <workItem from="1511205930048" duration="15481000" />
-      <workItem from="1511289002325" duration="5137000" />
+      <workItem from="1511289002325" duration="5487000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70698000" />
+    <option name="totallyTimeSpent" value="71048000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
@@ -365,8 +363,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/android/PrintActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6043">
-          <caret line="1361" column="66" lean-forward="false" selection-start-line="1361" selection-start-column="66" selection-end-line="1361" selection-end-column="66" />
+        <state relative-caret-position="4">
+          <caret line="1844" column="67" lean-forward="false" selection-start-line="1844" selection-start-column="67" selection-end-line="1844" selection-end-column="67" />
           <folding />
         </state>
       </provider>

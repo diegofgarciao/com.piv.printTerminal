@@ -1742,11 +1742,11 @@ public class PrintActivity extends CordovaPlugin {
                         print.appendTextEntity2(text);
                     }
                     //------------------------------------------------------------------------------
-                    actualhourDupliPrepa = jsonobject.getString("horaactual");
+                    actualhourDupliPrepa = jsonobject.getString("horarecibo");
                     if(actualhourDupliPrepa == "null"){
                         //callbackContext.success("Valueoff horaactual");
                     }else{
-                        text.text="Hora: " + actualhourDupliPrepa;
+                        text.text="Hora Recibo: " + actualhourDupliPrepa;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
