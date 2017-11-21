@@ -1766,7 +1766,7 @@ public class PrintActivity extends CordovaPlugin {
                         print.appendTextEntity2(text);
                     }
                     //------------------------------------------------------------------------------
-                    valuecheckDupliPrepa = jsonobject.getString("valorpagado");
+                    valuecheckDupliPrepa = jsonobject.getString("valor_pagado");
                     if(valuecheckDupliPrepa == "null"){
                         //callbackContext.success("Valueoff valorpagado");
                     }else{
