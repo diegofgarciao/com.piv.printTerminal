@@ -213,9 +213,9 @@ public class PrintActivity extends CordovaPlugin {
                     text.engfontsize=FontLattice.TWENTY_FOUR;
                     print.appendTextEntity2(text);
                     //------------------------------------------------------------------------------
-                    alertdatePrint = jsonobject.getString("fechalerta");
+                    alertdatePrint = jsonobject.getString("fechaalerta");
                     if(alertdatePrint == "null"){
-                        //callbackContext.success("Valueoff fechalerta");
+                        //callbackContext.success("Valueoff fechaalerta");
                     }else{
                         text.text=alertdatePrint;
                         text.isBoldFont=false;
@@ -410,7 +410,7 @@ public class PrintActivity extends CordovaPlugin {
                         print.appendTextEntity2(text);
                     }
                     //------------------------------------------------------------------------------
-                    observationsecondPrint = jsonobject.getString("observacion1");
+                    observationsecondPrint = jsonobject.getString("observacion2");
                     if(observationsecondPrint == "null"){
                         //callbackContext.success("Valueoff observacion1");
                     }else{
@@ -628,7 +628,7 @@ public class PrintActivity extends CordovaPlugin {
                     text.engfontsize = FontLattice.TWENTY_FOUR;
                     print.appendTextEntity2(text);
                     //------------------------------------------------------------------------------
-                    alertdateGenerarAlerta = jsonobject.getString("fechalerta");
+                    alertdateGenerarAlerta = jsonobject.getString("fechaalerta");
                     if (alertdateGenerarAlerta == "null") {
                         //callbackContext.success("Valueoff fechalerta");
                     } else {
@@ -640,9 +640,9 @@ public class PrintActivity extends CordovaPlugin {
                         print.appendTextEntity2(text);
                     }
                     //------------------------------------------------------------------------------
-                    alerthourGenerarAlerta = jsonobject.getString("horaactual");
+                    alerthourGenerarAlerta = jsonobject.getString("horaalerta");
                     if (alerthourGenerarAlerta == "null") {
-                        //callbackContext.success("Valueoff horaactual");
+                        //callbackContext.success("Valueoff horaalerta");
                     } else {
                         text.text = alerthourGenerarAlerta;
                         text.isBoldFont = false;
@@ -729,7 +729,7 @@ public class PrintActivity extends CordovaPlugin {
                         print.appendTextEntity2(text);
                     }
                     //------------------------------------------------------------------------------
-                    observationsecondGenerarAlerta = jsonobject.getString("observacion1");
+                    observationsecondGenerarAlerta = jsonobject.getString("observacion2");
                     if (observationsecondGenerarAlerta == "null") {
                         //callbackContext.success("Valueoff observacion1");
                     } else {
