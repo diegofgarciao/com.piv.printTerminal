@@ -89,7 +89,7 @@ public class PrintActivity extends CordovaPlugin {
             String addressPrint = new String();
             String phonenumberPrint = new String();
             String ticketnamePrint = new String();
-            String alertdatePrint = new String();
+            String ticketdatePrint = new String();
             String limitdatePrint = new String();
             String saledatePrint = new String();
             String actualhourPrint = new String();
@@ -213,33 +213,21 @@ public class PrintActivity extends CordovaPlugin {
                     text.engfontsize=FontLattice.TWENTY_FOUR;
                     print.appendTextEntity2(text);
                     //------------------------------------------------------------------------------
-                    alertdatePrint = jsonobject.getString("fechaalerta");
-                    if(alertdatePrint == "null"){
-                        //callbackContext.success("Valueoff fechaalerta");
+                    ticketdatePrint = jsonobject.getString("fecharecibo");
+                    if(ticketdatePrint == "null"){
+                           //callbackContext.success("Valueoff fecharecibo");
                     }else{
-                        text.text="Fecha Alerta: " + alertdatePrint;
-                        text.isBoldFont=false;
-                        text.engFontType= FontType.FZZDX;
-                        text.align= Align.LEFT;
-                        text.engfontsize=FontLattice.TWENTY_FOUR;
-                        print.appendTextEntity2(text);
-                    }
-                    //------------------------------------------------------------------------------
-                    limitdatePrint = jsonobject.getString("fechalimite");
-                    if(limitdatePrint == "null"){
-                        //callbackContext.success("Valueoff fechalimite");
-                    }else{
-                        text.text="Fecha Limite: "+limitdatePrint;
-                        text.isBoldFont=false;
-                        text.engFontType= FontType.FZZDX;
-                        text.align= Align.LEFT;
-                        text.engfontsize=FontLattice.TWENTY_FOUR;
-                        print.appendTextEntity2(text);
+                         text.text="Fecha Recibo: "+ticketdatePrint;
+                         text.isBoldFont=false;
+                         text.engFontType= FontType.FZZDX;
+                         text.align= Align.LEFT;
+                         text.engfontsize=FontLattice.TWENTY_FOUR;
+                         print.appendTextEntity2(text);
                     }
                     //------------------------------------------------------------------------------
                     saledatePrint = jsonobject.getString("fechaventa");
                     if(saledatePrint == "null"){
-                        //callbackContext.success("Valueoff fechaventa");
+                         //callbackContext.success("Valueoff fechaventa");
                     }else{
                         text.text="Fecha Pago: "+saledatePrint;
                         text.isBoldFont=false;
@@ -249,9 +237,21 @@ public class PrintActivity extends CordovaPlugin {
                         print.appendTextEntity2(text);
                     }
                     //------------------------------------------------------------------------------
-                    actualhourPrint = jsonobject.getString("horaactual");
+                    limitdatePrint = jsonobject.getString("fecha_limite");
+                    if(limitdatePrint == "null"){
+                        //callbackContext.success("Valueoff fecha_limite");
+                    }else{
+                        text.text="Fecha Limite: "+limitdatePrint;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    actualhourPrint = jsonobject.getString("horarecibo");
                     if(actualhourPrint == "null"){
-                        //callbackContext.success("Valueoff horaactual");
+                        //callbackContext.success("Valueoff horarecibo");
                     }else{
                         text.text="Hora: " + actualhourPrint;
                         text.isBoldFont=false;
@@ -285,7 +285,7 @@ public class PrintActivity extends CordovaPlugin {
                         print.appendTextEntity2(text);
                     }
                     //------------------------------------------------------------------------------
-                    valuecheckPrint = jsonobject.getString("valorpagado");
+                    valuecheckPrint = jsonobject.getString("valor_pagado");
                     if(valuecheckPrint == "null"){
                         //callbackContext.success("Valueoff valorpagado");
                     }else{
@@ -297,9 +297,9 @@ public class PrintActivity extends CordovaPlugin {
                         print.appendTextEntity2(text);
                     }
                     //------------------------------------------------------------------------------
-                    alerthourPrint = jsonobject.getString("horaalerta");
+                    alerthourPrint = jsonobject.getString("horainicio");
                     if(alerthourPrint == "null"){
-                        //callbackContext.success("Valueoff horaalerta");
+                        //callbackContext.success("Valueoff horainicio");
                     }else{
                         text.text="Valido desde: "+alerthourPrint;
                         text.isBoldFont=false;
@@ -338,18 +338,6 @@ public class PrintActivity extends CordovaPlugin {
                         //callbackContext.success("Valueoff zona");
                     }else{
                         text.text="Zona: " + zonePrint;
-                        text.isBoldFont=false;
-                        text.engFontType= FontType.FZZDX;
-                        text.align= Align.LEFT;
-                        text.engfontsize=FontLattice.TWENTY_FOUR;
-                        print.appendTextEntity2(text);
-                    }
-                    //------------------------------------------------------------------------------
-                    alertidPrint = jsonobject.getString("idalerta");
-                    if(alertidPrint == "null"){
-                        //callbackContext.success("Valueoff idalerta");
-                    }else{
-                        text.text="IdAlerta: " + alertidPrint;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
