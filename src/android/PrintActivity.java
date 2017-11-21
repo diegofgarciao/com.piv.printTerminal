@@ -1790,9 +1790,9 @@ public class PrintActivity extends CordovaPlugin {
                         print.appendTextEntity2(text);
                     }
                     //------------------------------------------------------------------------------
-                    alerthourDupliPrepa = jsonobject.getString("horaalerta");
+                    alerthourDupliPrepa = jsonobject.getString("horainicio");
                     if(alerthourDupliPrepa == "null"){
-                        //callbackContext.success("Valueoff horaalerta");
+                        //callbackContext.success("Valueoff horainicio");
                     }else{
                         text.text="Valido desde: "+alerthourDupliPrepa;
                         text.isBoldFont=false;
