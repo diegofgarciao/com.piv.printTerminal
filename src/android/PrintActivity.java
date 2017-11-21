@@ -182,9 +182,9 @@ public class PrintActivity extends CordovaPlugin {
                     text.engfontsize=FontLattice.TWENTY_FOUR;
                     print.appendTextEntity2(text);
                     //------------------------------------------------------------------------------
-                    alertdatePrint = jsonobject.getString("fechalerta");
+                    alertdatePrint = jsonobject.getString("fechaalerta");
                     if(alertdatePrint == "null"){
-                        //callbackContext.success("Valueoff fechalerta");
+                        //callbackContext.success("Valueoff fechaalerta");
                     }else{
                         text.text=alertdatePrint;
                         text.isBoldFont=false;
@@ -597,7 +597,7 @@ public class PrintActivity extends CordovaPlugin {
                     text.engfontsize = FontLattice.TWENTY_FOUR;
                     print.appendTextEntity2(text);
                     //------------------------------------------------------------------------------
-                    alertdateGenerarAlerta = jsonobject.getString("fechalerta");
+                    alertdateGenerarAlerta = jsonobject.getString("fechaalerta");
                     if (alertdateGenerarAlerta == "null") {
                         //callbackContext.success("Valueoff fechalerta");
                     } else {
