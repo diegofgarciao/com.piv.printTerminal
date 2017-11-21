@@ -325,7 +325,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(endhourPrint == "null"){
                         //callbackContext.success("Valueoff horafin");
                     }else{
-                        text.text="Hora Fin: " + timePrint;
+                        text.text="Hora Cierre: " + timePrint;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
@@ -1055,7 +1055,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(endhourPagaralerta == "null"){
                         //callbackContext.success("Valueoff horafin");
                     }else{
-                        text.text="Hora Fin: " + endhourPagaralerta;
+                        text.text="Hora Cierre: " + endhourPagaralerta;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
@@ -1806,7 +1806,7 @@ public class PrintActivity extends CordovaPlugin {
                     if(endhourDupliPrepa == "null"){
                         //callbackContext.success("Valueoff horafin");
                     }else{
-                        text.text="Hora Fin: " + endhourDupliPrepa;
+                        text.text="Hora Cierre: " + endhourDupliPrepa;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
