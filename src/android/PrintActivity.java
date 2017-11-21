@@ -1694,11 +1694,11 @@ public class PrintActivity extends CordovaPlugin {
                     text.engfontsize=FontLattice.TWENTY_FOUR;
                     print.appendTextEntity2(text);
                     //------------------------------------------------------------------------------
-                    alertdateDupliPrepa = jsonobject.getString("fechaalerta");
+                    alertdateDupliPrepa = jsonobject.getString("fecharecibo");
                     if(alertdateDupliPrepa == "null"){
-                        //callbackContext.success("Valueoff fechaalerta");
+                        //callbackContext.success("Valueoff fecharecibo");
                     }else{
-                        text.text="Fecha Alerta: " + alertdateDupliPrepa;
+                        text.text="Fecha Recibo: " + alertdateDupliPrepa;
                         text.isBoldFont=false;
                         text.engFontType= FontType.FZZDX;
                         text.align= Align.LEFT;
@@ -1706,9 +1706,21 @@ public class PrintActivity extends CordovaPlugin {
                         print.appendTextEntity2(text);
                     }
                     //------------------------------------------------------------------------------
-                    limitdateDupliPrepa = jsonobject.getString("fechalimite");
+                     alertdateDupliPrepa = jsonobject.getString("fechaventa");
+                     if(alertdateDupliPrepa == "null"){
+                         //callbackContext.success("Valueoff fechaventa");
+                     }else{
+                     text.text="Fecha Venta: " + alertdateDupliPrepa;
+                     text.isBoldFont=false;
+                     text.engFontType= FontType.FZZDX;
+                     text.align= Align.LEFT;
+                     text.engfontsize=FontLattice.TWENTY_FOUR;
+                     print.appendTextEntity2(text);
+                     }
+                    //------------------------------------------------------------------------------
+                    limitdateDupliPrepa = jsonobject.getString("fecha_limite");
                     if(limitdateDupliPrepa == "null"){
-                        //callbackContext.success("Valueoff fechalimite");
+                        //callbackContext.success("Valueoff fecha_limite");
                     }else{
                         text.text="Fecha Limite: "+limitdateDupliPrepa;
                         text.isBoldFont=false;
@@ -1826,7 +1838,7 @@ public class PrintActivity extends CordovaPlugin {
                         print.appendTextEntity2(text);
                     }
                     //------------------------------------------------------------------------------
-                    alertidDupliPrepa = jsonobject.getString("idalerta");
+                    /*alertidDupliPrepa = jsonobject.getString("idalerta");
                     if(alertidDupliPrepa == "null"){
                         //callbackContext.success("Valueoff idalerta");
                     }else{
@@ -1836,7 +1848,7 @@ public class PrintActivity extends CordovaPlugin {
                         text.align= Align.LEFT;
                         text.engfontsize=FontLattice.TWENTY_FOUR;
                         print.appendTextEntity2(text);
-                    }
+                    }*/
                     //------------------------------------------------------------------------------
                     saleidDupliPrepa = jsonobject.getString("idventa");
                     if(saleidDupliPrepa == "null"){
