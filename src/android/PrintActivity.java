@@ -36,13 +36,11 @@ public class PrintActivity extends CordovaPlugin {
     @Override
         /*public boolean execute(String action, final String args, CallbackContext callbackContext){*/
     public boolean execute(String action, final JSONArray args, CallbackContext callbackContext){
-
         if(action.equals("verificarPluginJava"))
         {
             rta = args + out ;
             callbackContext.success(rta);
         }
-
         else if (action.equals("printPrepago"))
         {
             vacio = out;
@@ -82,7 +80,7 @@ public class PrintActivity extends CordovaPlugin {
 
             JSONArray obj = new JSONArray();
             obj = args;
-            try{
+            //try{
                 for(int i = 0; i < obj.length(); i++){
                     JSONObject jsonobject = obj.getJSONObject(i);
                     //------------------------------------------------------------------------------
@@ -459,9 +457,10 @@ public class PrintActivity extends CordovaPlugin {
                     text.engfontsize=FontLattice.SIXTEEN;
                     print.appendTextEntity2(text);
                 }
-            }catch(Exception e){
+            //}
+            /*catch(Exception e){
                 callbackContext.error(e.toString());
-            }
+            }*/
             //------------------------------------------------------------------------------
             PrintRespCode printRespCode = print.startPrint();
             callbackContext.success(printRespCode.toString());
