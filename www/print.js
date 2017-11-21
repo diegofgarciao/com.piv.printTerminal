@@ -15,13 +15,18 @@ module.exports = (function(){
     var imprimirDuplicadoGeneraralerta = function(args,successCallback, errorCallback){
         cordova.exec(successCallback, errorCallback, "print", "printDuplicadoGenerarAlerta", [args]);};
 
+    var imprimirDuplicadoPrepago = function(args,successCallback, errorCallback){
+        cordova.exec(successCallback, errorCallback, "print", "printDuplicadoPrepago", [args]);};
+
+
 
     return {
         imprimirPrepago:imprimirPrepago,
         verificarPlugin:verificarPlugin,
         imprimirGenerarAlerta:imprimirGenerarAlerta,
         imprimirPagaralerta:imprimirPagaralerta,
-        imprimirDuplicadoGeneraralerta:imprimirDuplicadoGeneraralerta
+        imprimirDuplicadoGeneraralerta:imprimirDuplicadoGeneraralerta,
+        imprimirDuplicadoPrepago:imprimirDuplicadoPrepago
     };
 
 })();

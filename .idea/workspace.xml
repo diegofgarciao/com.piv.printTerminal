@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08f54e73-0929-4168-8a5e-99e2ca11b627" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/android/PrintActivity.java" afterPath="$PROJECT_DIR$/src/android/PrintActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/print.js" afterPath="$PROJECT_DIR$/www/print.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +20,8 @@
       <file leaf-file-name="PrintActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/android/PrintActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="291" column="53" lean-forward="false" selection-start-line="291" selection-start-column="53" selection-end-line="291" selection-end-column="53" />
+            <state relative-caret-position="281">
+              <caret line="1360" column="50" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1561" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -30,8 +30,8 @@
       <file leaf-file-name="print.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/print.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+            <state relative-caret-position="306">
+              <caret line="18" column="84" lean-forward="false" selection-start-line="18" selection-start-column="84" selection-end-line="18" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -54,8 +54,8 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/plugin.xml" />
-        <option value="$PROJECT_DIR$/www/print.js" />
         <option value="$PROJECT_DIR$/src/android/PrintActivity.java" />
+        <option value="$PROJECT_DIR$/www/print.js" />
       </list>
     </option>
   </component>
@@ -158,12 +158,12 @@
       <workItem from="1510926331037" duration="12200000" />
       <workItem from="1511189658091" duration="405000" />
       <workItem from="1511205930048" duration="15481000" />
-      <workItem from="1511289002325" duration="2521000" />
+      <workItem from="1511289002325" duration="3871000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68082000" />
+    <option name="totallyTimeSpent" value="69432000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
@@ -359,16 +359,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/print.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        <state relative-caret-position="306">
+          <caret line="18" column="84" lean-forward="false" selection-start-line="18" selection-start-column="84" selection-end-line="18" selection-end-column="84" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/android/PrintActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="291" column="53" lean-forward="false" selection-start-line="291" selection-start-column="53" selection-end-line="291" selection-end-column="53" />
+        <state relative-caret-position="281">
+          <caret line="1360" column="50" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1561" selection-end-column="1" />
           <folding />
         </state>
       </provider>

@@ -1556,6 +1556,427 @@ public class PrintActivity extends CordovaPlugin {
             PrintRespCode printRespCode = print.startPrint();
             callbackContext.success(printRespCode.toString());
             //Log.i("PrintActivity", printRespCode.toString().toString());
+        }else if(action.equals("printDuplicadoPrepago")){
+            vacio = out;
+            Printer2 print = Printer2.getInstance();
+            TextEntity text =  new TextEntity(vacio, null, false, null);
+            //TextEntity textOne =  new TextEntity(" ", null, false, null);
+            print.appendTextEntity2(text);
+
+            String titleDupliPrepa = new String();
+            String subtitleDupliPrepa = new String();
+            String ubicationDupliPrepa = new String();
+            String nitDupliPrepa = new String();
+            String addressDupliPrepa = new String();
+            String phonenumberDupliPrepa = new String();
+            String ticketnameDupliPrepa = new String();
+            String alertdateDupliPrepa = new String();
+            String limitdateDupliPrepa = new String();
+            String saledateDupliPrepa = new String();
+            String actualhourDupliPrepa = new String();
+            String licenseplateDupliPrepa = new String();
+            String timeDupliPrepa = new String();
+            String valuecheckDupliPrepa = new String();
+            String alerthourDupliPrepa = new String();
+            String limithourDupliPrepa = new String();
+            String endhourDupliPrepa = new String();
+            String zoneDupliPrepa = new String();
+            String saleidDupliPrepa = new String();
+            String alertidDupliPrepa = new String();
+            String fractionvalueDupliPrepa = new String();
+            String fractiontimeDupliPrepa = new String();
+            String observationoneDupliPrepa = new String();
+            String observationsecondDupliPrepa = new String();
+            String recommendationnameDupliPrepa = new String();
+            String recommendationtextDupliPrepa = new String();
+            String footeroneDupliPrepa = new String();
+            String footersecondDupliPrepa = new String();
+
+            JSONArray obj = new JSONArray();
+            obj = args;
+            try{
+                for(int i = 0; i < obj.length(); i++){
+                    JSONObject jsonobject = obj.getJSONObject(i);
+                    //------------------------------------------------------------------------------
+                    titleDupliPrepa = jsonobject.getString("titulo");
+                    if(titleDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff titulo");
+                    }else {
+                        text.text = titleDupliPrepa;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        text.newline = true;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    subtitleDupliPrepa = jsonobject.getString("subtitulo");
+                    if(subtitleDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff subtitulo");
+                    }else {
+                        text.text = subtitleDupliPrepa;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        text.newline = true;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    ubicationDupliPrepa = jsonobject.getString("ubicacion");
+                    if(ubicationDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff ubicacion");
+                    }else{
+                        text.text = ubicationDupliPrepa;
+                        text.isBoldFont = false;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    nitDupliPrepa = jsonobject.getString("nit");
+                    if(nitDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff nit");
+                    }else {
+                        text.text = "NIT : " + nitDupliPrepa;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.MSGOTHIC;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    addressDupliPrepa = jsonobject.getString("direccion");
+                    if(addressDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff direccion");
+                    }else {
+                        text.text = "DIR : " + addressDupliPrepa;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.MSGOTHIC;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    phonenumberDupliPrepa = jsonobject.getString("telefono");
+                    if(phonenumberDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff telefono");
+                    }else {
+                        text.text = "TEL : " + phonenumberDupliPrepa;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.MSGOTHIC;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    text.text="";
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.TWENTY_FOUR;
+                    print.appendTextEntity2(text);
+                    //------------------------------------------------------------------------------
+                    ticketnameDupliPrepa = jsonobject.getString("nombrerecibo");
+                    if(ticketnameDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff nombrerecibo");
+                    }else {
+                        text.text = ticketnameDupliPrepa;
+                        text.isBoldFont = true;
+                        text.engFontType = FontType.FZZDX;
+                        text.align = Align.CENTER;
+                        text.engfontsize = FontLattice.THIRTY_TWO;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    text.text="";
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.TWENTY_FOUR;
+                    print.appendTextEntity2(text);
+                    //------------------------------------------------------------------------------
+                    alertdateDupliPrepa = jsonobject.getString("fechaalerta");
+                    if(alertdateDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff fechaalerta");
+                    }else{
+                        text.text="Fecha Alerta: " + alertdateDupliPrepa;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    limitdateDupliPrepa = jsonobject.getString("fechalimite");
+                    if(limitdateDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff fechalimite");
+                    }else{
+                        text.text="Fecha Limite: "+limitdateDupliPrepa;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    saledateDupliPrepa = jsonobject.getString("fechaventa");
+                    if(saledateDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff fechaventa");
+                    }else{
+                        text.text="Fecha Pago: "+saledateDupliPrepa;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    actualhourDupliPrepa = jsonobject.getString("horaactual");
+                    if(actualhourDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff horaactual");
+                    }else{
+                        text.text="Hora: " + actualhourDupliPrepa;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    licenseplateDupliPrepa =  jsonobject.getString("placa");
+                    if(licenseplateDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff placa");
+                    }else{
+                        text.text="PLACA: " + licenseplateDupliPrepa;
+                        text.isBoldFont=true;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.THIRTY_TWO;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    timeDupliPrepa = jsonobject.getString("tiempo");
+                    if(timeDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff tiempo");
+                    }else{
+                        text.text="Tiempo: "+timeDupliPrepa;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    valuecheckDupliPrepa = jsonobject.getString("valorpagado");
+                    if(valuecheckDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff valorpagado");
+                    }else{
+                        text.text="Valor Pagado: " + valuecheckDupliPrepa;
+                        text.isBoldFont=true;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.THIRTY_TWO;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    alerthourDupliPrepa = jsonobject.getString("horaalerta");
+                    if(alerthourDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff horaalerta");
+                    }else{
+                        text.text="Valido desde: "+alerthourDupliPrepa;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    limithourDupliPrepa = jsonobject.getString("horalimite");
+                    if(limithourDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff horalimite");
+                    }else{
+                        text.text="Valido hasta: " + limithourDupliPrepa;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    endhourDupliPrepa = jsonobject.getString("horafin");
+                    if(endhourDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff horafin");
+                    }else{
+                        text.text="Hora Fin: " + endhourDupliPrepa;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    zoneDupliPrepa = jsonobject.getString("zona");
+                    if(zoneDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff zona");
+                    }else{
+                        text.text="Zona: " + zoneDupliPrepa;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    alertidDupliPrepa = jsonobject.getString("idalerta");
+                    if(alertidDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff idalerta");
+                    }else{
+                        text.text="IdAlerta: " + alertidDupliPrepa;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    saleidDupliPrepa = jsonobject.getString("idventa");
+                    if(saleidDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff idventa");
+                    }else{
+                        text.text="Consecutivo: " + saleidDupliPrepa;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    fractionvalueDupliPrepa = jsonobject.getString("valorfraccion");
+                    if(fractionvalueDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff valorfraccion");
+                    }else{
+                        text.text="Valor: "+fractionvalueDupliPrepa;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    fractiontimeDupliPrepa = jsonobject.getString("tiempofraccion");
+                    if(fractiontimeDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff tiempofraccion");
+                    }else{
+                        text.text="Tarifa: " + fractiontimeDupliPrepa;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    text.text="";
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.TWENTY_FOUR;
+                    print.appendTextEntity2(text);
+                    //------------------------------------------------------------------------------
+                    observationoneDupliPrepa = jsonobject.getString("observacion1");
+                    if(observationoneDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff observacion1");
+                    }else{
+                        text.text=observationoneDupliPrepa;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.CENTER;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    observationsecondDupliPrepa = jsonobject.getString("observacion2");
+                    if(observationsecondDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff observacion1");
+                    }else{
+                        text.text=observationsecondDupliPrepa;
+                        text.isBoldFont=false;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.CENTER;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    text.text="";
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.TWENTY_FOUR;
+                    print.appendTextEntity2(text);
+                    //------------------------------------------------------------------------------
+                    recommendationnameDupliPrepa = jsonobject.getString("nombrerecomendaciones");
+                    if(recommendationnameDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff nombrerecomendaciones");
+                    }else{
+                        text.text=recommendationnameDupliPrepa;
+                        text.isBoldFont=true;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    recommendationtextDupliPrepa = jsonobject.getString("textorecomendaciones");
+                    if(recommendationtextDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff textorecomendaciones");
+                    }else{
+                        text.text = recommendationtextDupliPrepa;
+                        text.isBoldFont=true;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.LEFT;
+                        text.engfontsize=FontLattice.SIXTEEN;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    text.text="";
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.SIXTEEN;
+                    print.appendTextEntity2(text);
+                    //------------------------------------------------------------------------------
+                    footeroneDupliPrepa = jsonobject.getString("pie1");
+                    if(footeroneDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff pie1");
+                    }else{
+                        text.text=footeroneDupliPrepa;
+                        text.isBoldFont=true;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.CENTER;
+                        text.engfontsize=FontLattice.SIXTEEN;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    footersecondDupliPrepa = jsonobject.getString("pie2");
+                    if(footersecondDupliPrepa == "null"){
+                        //callbackContext.success("Valueoff pie2");
+                    }else{
+                        text.text=footersecondDupliPrepa;
+                        text.isBoldFont=true;
+                        text.engFontType= FontType.FZZDX;
+                        text.align= Align.CENTER;
+                        text.engfontsize=FontLattice.TWENTY_FOUR;
+                        print.appendTextEntity2(text);
+                    }
+                    //------------------------------------------------------------------------------
+                    text.text="";
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.SIXTEEN;
+                    print.appendTextEntity2(text);
+                    //------------------------------------------------------------------------------
+                    text.text="";
+                    text.align= Align.CENTER;
+                    text.engfontsize=FontLattice.SIXTEEN;
+                    print.appendTextEntity2(text);
+                }
+            }catch(Exception e){
+                callbackContext.error(e.toString());
+            }
+            //--------------------------------------------------------------------------------------
+            PrintRespCode printRespCode = print.startPrint();
+            callbackContext.success(printRespCode.toString());
         }
         return true;
     }
