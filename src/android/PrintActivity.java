@@ -465,7 +465,7 @@ public class PrintActivity extends CordovaPlugin {
             //------------------------------------------------------------------------------
             PrintRespCode printRespCode = print.startPrint();
             callbackContext.success(printRespCode.toString());
-            return true;
+
         }else if(action.equals("printGenerarAlerta"))
         {
             vacio = out;
