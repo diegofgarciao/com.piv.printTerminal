@@ -458,9 +458,9 @@ public class PrintActivity extends CordovaPlugin {
                     print.appendTextEntity2(text);
                 }
             }
-            /*catch(Exception e){
+            catch(Exception e){
                 callbackContext.error(e.toString());
-            }*/
+            }
             //------------------------------------------------------------------------------
             PrintRespCode printRespCode = print.startPrint();
             callbackContext.success(printRespCode.toString());
@@ -503,7 +503,7 @@ public class PrintActivity extends CordovaPlugin {
                     titleGenerarAlerta = jsonobject.getString("titulo");
                     if (titleGenerarAlerta == "null") {
                         //callbackContext.success("Valueoff titulo");
-                    } else {
+                    }else {
                         text.text = titleGenerarAlerta;
                         text.isBoldFont = false;
                         text.engFontType = FontType.FZZDX;
