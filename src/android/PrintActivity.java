@@ -126,7 +126,7 @@ public class PrintActivity extends CordovaPlugin {
                     //------------------------------------------------------------------------------
                     nitPrint = jsonobject.getString("nit");
                     if(nitPrint == "null"){
-                        callbackContext.success("Valueoff nit");
+                        //callbackContext.success("Valueoff nit");
                     }else {
                         text.text = "NIT : " + nitPrint;
                         text.isBoldFont = true;
@@ -138,7 +138,7 @@ public class PrintActivity extends CordovaPlugin {
                     //------------------------------------------------------------------------------
                     addressPrint = jsonobject.getString("direccion");
                     if(addressPrint == "null"){
-                        callbackContext.success("Valueoff direccion");
+                        //callbackContext.success("Valueoff direccion");
                     }else {
                         text.text = "DIR : " + addressPrint;
                         text.isBoldFont = true;
@@ -150,7 +150,7 @@ public class PrintActivity extends CordovaPlugin {
                     //------------------------------------------------------------------------------
                     phonenumberPrint = jsonobject.getString("telefono");
                     if(phonenumberPrint == "null"){
-                        callbackContext.success("Valueoff telefono");
+                        //callbackContext.success("Valueoff telefono");
                     }else {
                         text.text = "TEL : " + phonenumberPrint;
                         text.isBoldFont = true;
@@ -785,7 +785,6 @@ public class PrintActivity extends CordovaPlugin {
             //------------------------------------------------------------------------------
             PrintRespCode printRespCode = print.startPrint();
             callbackContext.success(printRespCode.toString());
-
         }
         return true;
     }
